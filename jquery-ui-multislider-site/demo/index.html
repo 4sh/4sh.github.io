@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html class="ie67 ie678" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="ie8 ie678" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="fr"> <!--<![endif]-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>ui.slider tweaks example</title>
+                <link type="text/css" href="./base-theme/jquery.ui.all.css" rel="stylesheet" />
+		<link type="text/css" href="../ui.multislider.extras.css" rel="stylesheet" />
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../jquery-ui-multislider.js"></script>
+		<script type="text/javascript">
+			$(function(){
+                // Crappy impl not relying on any jquery date formatter
+                function createHoursTooltips(){
+                    var tooltips = [];
+                    var i=0;
+                    while(i<60*24){
+                        tooltips[i] = ""+(Math.floor(i/60))+"h"+(i%60);
+                        i+=15;
+                    }
+                    return tooltips;
+                };
+
+				// Slider
+				window.blahSlider = $('#slider').multislider(
+					{
+						min: 0,
+						max: 60*24-15,
+						values: [30,240,300,600,60*22],
+                        frozenHandleIndexes: [1, 4],
+                        handlesTooltips: ["heure debut", "heure milieu avec un libelle super long !", "handle qui en decale une autre","seconde heure milieu", "heure fin"],
+                        tooltips: createHoursTooltips(),
+                        step: 15,
+						range: true
+					}
+				).bind(
+					'slide',
+					function(e, slideInfos) {
+                        if(slideInfos.index === 2){
+                            slideInfos.values[4] += slideInfos.newValue - slideInfos.oldValue;
+                            slideInfos.updatedIndexes.push(4);
+                        }
+					}
+				);
+			});
+		</script>
+		<style type="text/css">
+			/*demo page css*/
+			body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 50px;}
+			h2 { margin: 1em 0 2em; }
+			p, li { font-size: 131%; }
+		</style>
+	</head>
+	<body>
+		<h1>ui.slider tweaks</h1>
+
+		<p>This page demonstrates the changes I made to ui.slider for my needs:</p>
+
+		<ul>
+			<li>You can now pass tooltips to a ui.slider. These will display when a handle is active. CSS taken from
+			<a href="http://www.filamentgroup.com/lab/update_jquery_ui_16_slider_from_a_select_element/">Slider from a Select element</a>
+			example by Filament Group and modified slightly (ui-slider-tooltip is positioned from bottom instead of top so it can word-wrap
+			if necessary).[see <a href="http://dev.jqueryui.com/ticket/3071">#3071</a>]</li>
+			<li>The order of handles is maintained - you can't drag them past each other any more. [see <a href="http://dev.jqueryui.com/ticket/4387">#4387</a>]</li>
+			<li>You can now have a range with more than two handles. It is assumed to run between the first and last handle. [see <a href="http://dev.jqueryui.com/ticket/4388">#4388</a>]</li>
+		</ul>
+
+		<!-- Slider -->
+		<h2>Slider</h2>
+                <!-- Crappy but heh ... since tooltip are positionned in absolute, we can't really do better... -->
+                <div id="sliderContainerToFixMarginIssues" style="margin-top: 70px; margin-bottom: 75px;">
+			<div id="slider" style="width: 800px"></div>
+                </div>
+        <h2>After slider</h2>
+
+	</body>
+</html>
+
+
