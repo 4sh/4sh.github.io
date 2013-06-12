@@ -1,0 +1,484 @@
+#tag-cloud-container {
+	width: 650px;
+	height: 455px;
+	position: relative;
+	margin: 0 auto 0;
+	/*background: url(../img/tag_cloud.png) no-repeat 50% 50%;*/	
+}
+
+.tag {
+	display: inline-block;
+	position: absolute;	
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #494849;	
+}
+
+.red {
+	font-family: Georgia, "Times New Roman", Times, serif;	
+	color: #ED1C24;
+}
+
+
+#pos1 {
+	top: 17px;
+	left: 38px;	
+}
+
+#pos2 {
+	top: 146px;
+	left: 102px;
+}
+
+#pos3 {
+	top: 175px;
+	left: 100px;
+}
+
+#pos4 {
+    top: 216px;
+    left: 90px;
+}
+
+#pos5 {
+	top: 295px;
+	left: 92px;	
+}
+
+#pos6 {
+	top: 325px;
+	left: 92px;
+}
+
+#pos7 {
+	top: 31px;
+	left: 157px;
+}
+
+#pos8 {
+	top: 27px;
+	left: 192px;
+}
+
+#pos9 {
+	top: 296px;
+	left: 210px;
+}
+
+#pos10 {
+	top: 296px;
+	left: 243px;
+}
+
+#pos11 {
+	top: 40px;
+	left: 235px;
+}
+
+#pos12 {
+	top: 89px;
+	left: 237px;
+}
+
+#pos13 {
+	top: 117px;
+	left: 235px;
+}
+
+#pos14 {
+	top: 147px;
+	left: 234px;
+}
+
+#pos15 {
+	top: 217px;
+	left: 331px;
+}
+
+#pos16 {
+	top: 242px;
+	left: 331px;
+}
+
+#pos17 {
+	top: 267px;
+	left: 332px;
+}
+
+#pos18 {
+	top: 295px;
+	left: 279px;
+}
+
+#pos19 {
+	top: 324px;
+	left: 272px;
+}
+
+#pos20 {
+	top: 295px;
+	left: 340px;
+}
+
+#pos21 {
+	top: 300px;
+	left: 370px;
+}
+
+#pos22 {
+	top: 341px;
+	left: 370px;
+}
+
+#pos23 {
+	top: 225px;
+	left: 508px;
+}
+
+#pos24 {
+	top: 225px;
+	left: 549px;
+}
+
+#pos25 {
+	top: 353px;
+	left: 64px;
+}
+
+/* TAGS */
+
+.tags-could-item {
+    background: url("../img/tag_cloud.png") no-repeat;
+    width: 648px;
+    height: 455px;
+}
+
+#item-1 {
+    background-position: -38px -17px;
+    height: 331px;
+    left: 38px;
+    position: absolute;
+    top: 11px;
+    width: 54px;
+}
+
+#item-1:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -38px -11px }
+
+#item-2 {
+    background-position: -38px -17px;
+    height: 27px;
+    width: 87px;
+    top: 144px;
+    left: 95px;
+    position: absolute;
+}
+
+#item-2:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position:  -95px -144px; }
+
+#item-3 {
+    background-position: -38px -17px;
+    height: 35px;
+    top: 173px;
+    left: 95px;
+    position: absolute;
+    width: 87px;
+}
+
+#item-3:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position:  -95px -173px }
+
+#item-4 {
+    background-position: -38px -17px;
+    height: 120px;
+    width: 26px;;
+    top: 26px;
+    left: 154px;
+    position: absolute;
+}
+
+#item-4:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position:  -154px -27px }
+
+#item-5 {
+    background-position: -89px -295px;
+    height: 25px;
+    width: 123px;
+    left: 88px;
+    top: 295px;
+    position: absolute;
+}
+
+#item-5:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -88px -295px }
+
+#item-6 {
+    background-position: -38px -17px;
+    height: 80px;
+    width: 240px;
+    top: 209px;
+    left: 85px;
+    position: absolute;
+}
+
+#item-6:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -85px -210px }
+
+#item-7 {
+    background-position: -38px -17px;
+    height: 30px;
+    width: 120px;
+    top: 318px;
+    left: 89px;
+    position: absolute;
+}
+
+#item-7:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position:  -89px -319px }
+
+#item-8 {
+    background-position: -38px -17px;
+    height: 23px;
+    width: 146px;
+    left: 61px;
+    top: 348px;
+    position: absolute;
+}
+
+#item-8:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position:  -61px -348px }
+
+#item-9 {
+    background-position: -38px -17px;
+    height: 186px;
+    width: 36px;
+    left: 185px;
+    top: 19px;
+    position: absolute;
+}
+
+#item-9:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -185px -19px }
+
+#item-10 {
+    background-position: -38px -17px;
+    height: 129px;
+    width: 32px;
+    top: 295px;
+    left: 209px;
+    position: absolute;
+}
+
+#item-10:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -209px -295px }
+
+#item-11 {
+    background-position: -38px -17px;
+    height: 157px;
+    width: 31px;
+    top: 290px;
+    left: 240px;
+    position: absolute;
+}
+
+#item-11:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -240px -290px }
+
+#item-12 {
+    background-position: -38px -17px;
+    height: 51px;
+    width: 183px;
+    top: 34px;
+    left: 226px;
+    position: absolute;
+}
+
+#item-12:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -226px -34px }
+
+#item-13 {
+    background-position: -38px -17px;
+    height: 27px;
+    width: 160px;
+    left: 232px;
+    top: 85px;
+    position: absolute;
+}
+
+#item-13:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -232px -85px }
+
+#item-14 {
+    background-position: -38px -17px;
+    height: 27px;
+    width: 131px;
+    top: 114px;
+    left: 231px;
+    position: absolute;
+}
+
+#item-14:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -231px -114px  }
+
+#item-15 {
+    background-position: -38px -17px;
+    height: 71px;
+    width: 387px;
+    top: 143px;
+    left: 229px;
+    position: absolute;
+}
+
+#item-15:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -229px -144px  }
+
+#item-16 {
+    background-position: -38px -17px;
+    height: 29px;
+    width: 152px;
+    top: 211px;
+    left: 328px;
+    position: absolute;
+}
+
+#item-16:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -328px -211px  }
+
+#item-17 {
+    background-position: -38px -17px;
+    height: 26px;
+    width: 136px;
+    top: 238px;
+    left: 326px;
+    position: absolute;
+}
+
+#item-17:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -326px -239px  }
+
+#item-18 {
+    background-position: -38px -17px;
+    height: 26px;
+    width: 173px;
+    top: 263px;
+    left: 328px;
+    position: absolute;
+}
+
+#item-18:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -328px -264px  }
+
+#item-19 {
+    background-position: -38px -17px;
+    height: 30px;
+    width: 58px;
+    top: 289px;
+    left: 274px;
+    position: absolute;
+}
+
+#item-19:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -274px -289px  }
+
+#item-20 {
+    background-position: -38px -17px;
+    height: 27px;
+    width: 70px;
+    top: 319px;
+    left: 268px;
+    position: absolute;
+}
+
+#item-20:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -268px -319px  }
+
+#item-21 {
+    background-position: -38px -17px;
+    height: 104px;
+    width: 26px;
+    top: 291px;
+    left: 337px;
+    position: absolute;
+
+}
+
+#item-21:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -337px -291px  }
+
+#item-22 {
+    background-position: -38px -17px;
+    height: 44px;
+    width: 137px;
+    top: 294px;
+    left: 367px;
+    position: absolute;
+}
+
+#item-22:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -367px -294px  }
+
+#item-23 {
+    background-position: -38px -17px;
+    height: 29px;
+    width: 95px;
+    top: 336px;
+    left: 366px;
+    position: absolute;
+}
+
+#item-23:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -366px -336px  }
+
+#item-24 {
+    background-position: -38px -17px;
+    height: 118px;
+    width: 46px;
+    top: 218px;
+    left: 508px;
+    position: absolute;
+}
+
+#item-24:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -508px -219px  }
+
+#item-25 {
+    background-position: -38px -17px;
+    height: 118px;
+    width: 38px;
+    top: 218px;
+    left: 552px;
+    position: absolute;
+}
+
+#item-25:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -552px -219px  }
+
+#item-26 {
+    background-position: -38px -17px;
+    height: 28px;
+    width: 134px;
+    top: 364px;
+    left: 365px;
+    position: absolute;
+}
+
+#item-26:hover { background: url("../img/tag_cloud_hover.png") no-repeat; background-position: -365px -364px  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

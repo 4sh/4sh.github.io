@@ -1,0 +1,80 @@
+/* CSS : news twitter */
+
+#twitter-ticker{
+	margin: 22px auto 0;
+}
+
+#twitter-ticker{
+	width:360px;
+	height: 230px;
+	background:url(../img/twitter_image2.png) no-repeat #F5f5f5;
+	color:#666666;
+	display:none;
+
+	-moz-border-radius:10px 10px 6px 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius:6px;
+
+	text-align:left;
+}
+
+#tweet-container{
+	height:225px;
+	width:auto;
+	overflow:hidden;
+}
+
+.tweet{
+	padding:5px;
+	margin:0 8px 8px;
+	border:1px solid #F0F0F0;
+	background:url(../img/twitter_image1.png);	
+	width:auto;
+	overflow:hidden;
+}
+
+.tweet .user {
+	display: block;
+	font-weight:bold;
+}
+
+.tweet .time{
+	font-size:10px;
+	color:#AAAAAA;
+	white-space:nowrap;
+	display: block;
+    width: auto;
+	float: left;
+}
+
+.tweet .avatar {
+	display: block;
+	width: auto;
+	float: left;
+}
+
+.tweet .avatar img{
+	width:36px;
+	height:36px;
+	border:2px solid #eeeeee;
+	margin:0 5px 5px 0;
+}
+
+.tweet .txt{
+	clear:both;
+}
+
+a, a:visited {
+	color: #F11A0F;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+#loading{
+	margin:100px 95px;
+}

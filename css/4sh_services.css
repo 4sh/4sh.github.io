@@ -1,0 +1,416 @@
+/* Blackboard */
+#services-table {
+	position: relative;
+	width: 852px;
+	height: 525px;
+	background: url(../img/background_services_table.png) no-repeat;
+	margin: 0 auto 0;
+}
+
+.blackboard-item {
+	background: url('../img/sprite_services.png') no-repeat;	
+}
+
+.hoverable {
+	cursor: pointer;
+	display: block;	
+}
+
+#discover-top {
+	position: relative;
+	width: 123px;
+	height: 64px;
+	/*background: url(../img/discover_top.png) no-repeat;*/
+	background-position: -6px -6px;
+	top: 15px;
+	left: 16px;
+    cursor: default;
+}
+
+#discover-top:hover,
+#discover-top:active {
+    background: url("../img/discover_top_hover.png") no-repeat;
+}
+
+#discover-middle {
+	position: absolute;
+	width: 118px;
+	height: 260px;
+	/*background: url(../img/discover_middle.png) no-repeat;*/
+	background-position: -9px -82px;
+	top: 94px;
+	left: 25px;
+    cursor: default;
+}
+
+/*
+#discover-middle:hover,
+#discover-middle.active {
+	background: url(../img/discover_middle_active.png) no-repeat;
+	background-position: -144px -82px
+} */
+
+#discover-bottom {
+	position: absolute;
+	width: 104px;
+	height: 122px;
+	/*background: url(../img/discover_bottom.png) no-repeat;*/
+	background-position: -11px -353px;
+	top: 355px;
+	left: 30px;
+    cursor: default;
+}
+
+/*#discover-bottom:hover,
+#discover-bottom.active {
+	/*background: url(../img/discover_bottom_active.png) no-repeat;
+	background-position: -147px -353px;	
+}*/
+
+#design-top {
+	position: relative;
+	width: 118px;
+	height: 61px;
+	background-position: -145px -6px;
+	top: -66px;
+	left: 191px;
+    cursor: default;
+}
+
+#design-top:hover {
+    background: url("../img/design_top_hover.png") no-repeat;
+}
+
+#design-middle {
+	position: absolute;
+	width: 123px;
+	height: 130px;
+	/*background: url(../img/specification.png) no-repeat;*/
+	background-position: -283px -78px;
+	top: 89px;
+	left: 193px;
+    cursor: default;
+}
+
+/*#design-middle:hover,
+#design-middle.active {
+    /*background: url(../img/specification_active.png) no-repeat;
+    background-position: -415px -78px;
+}*/
+
+#design-bottom {
+    background-position: -281px -211px;
+    height: 130px;
+    left: 193px;
+    position: absolute;
+    top: 225px;
+    width: 123px;
+}
+
+#design-bottom:hover,
+#design-bottom.active {
+    background-position: -413px -211px;
+}
+
+#develop-top {
+	position: relative;
+	width: 112px;
+	height: 60px;
+	background-position: -280px -7px;
+    top: -143px;
+	left: 446px;
+    cursor: default;
+}
+
+#develop-top:hover {
+    background: url("../img/develop_top_hover.png") no-repeat;
+}
+
+#develop-dot-net {
+	position: absolute;
+	width: 84px;
+	height: 71px;
+	/*background: url(../img/dot_net.png) no-repeat;*/
+	background-position: -546px -5px;
+	top: 122px;
+	left: 347px;
+	
+}
+
+#develop-dot-net-develop {
+	position: absolute;
+	width: 221px;
+	height: 66px;
+	/*background: url(../img/dot_net_developpement.png) no-repeat;*/
+	background-position: -277px -345px;
+	top: 85px;
+	left: 427px;
+    cursor: default;
+}
+
+/*#develop-dot-net-develop:hover,
+#develop-dot-net-develop.active {
+	/*background: url(../img/dot_net_developpement_active.png) no-repeat;
+	background-position: -278px -415px;
+}*/
+
+#develop-dot-net-maintenance {
+	position: absolute;
+	width: 204px;
+	height: 60px;
+	/*background: url(../img/dot_net_maintenance.png) no-repeat;*/
+	background-position: -505px -367px;
+	top: 150px;
+	left: 438px;
+    cursor: default;
+}
+
+/*#develop-dot-net-maintenance:hover,
+#develop-dot-net-maintenance.active {
+	/*background: url(../img/dot_net_maintenance_active.png) no-repeat;
+	background-position: -713px -368px;
+}*/
+
+#develop-java {
+	position: absolute;
+	width: 84px;
+	height: 71px;
+	/*background: url(../img/java.png) no-repeat;*/
+	background-position: -649px -4px;
+	top: 248px;
+	left: 347px;
+}
+
+#develop-java-develop {
+	position: absolute;
+	width: 216px;
+	height: 63px;
+	/*background: url(../img/java_developpement.png) no-repeat;*/
+	background-position: -691px -446px;
+	top: 225px;
+	left: 431px;
+}
+
+#develop-java-develop:hover,
+#develop-java-develop.active {
+	/*background: url(../img/java_developpement_active.png) no-repeat;*/
+	background-position: -693px -518px;
+}
+
+#develop-java-maintenance {
+	position: absolute;
+	width: 222px;
+	height: 61px;
+	/*background: url(../img/java_maintenance.png) no-repeat;*/
+	background-position: -691px -591px;
+	top: 280px;
+	left: 433px;
+    cursor: default;
+}
+
+/*#develop-java-maintenance:hover,
+#develop-java-maintenance.active {
+	/*background: url(../img/java_maintenance_active.png) no-repeat;
+	background-position: -690px -661px;
+}*/
+
+#deploy-top {
+	position: relative;
+	width: 117px;
+	height: 61px;
+	/*background: url(../img/deploy_top.png) no-repeat;*/
+	background-position: -406px -7px;
+	top: -220px;
+	left: 696px;
+    cursor: default;
+}
+
+#deploy-top:hover {
+    background: url("../img/deploy_top_hover.png") no-repeat;
+}
+
+#deploy-middle {
+	position: absolute;
+	width: 162px;
+	height: 275px;
+	/*background: url(../img/support.png) no-repeat;*/
+	background-position: -568px -84px;
+	top: 87px;
+	left: 679px;
+    cursor: default;
+}
+
+/*#deploy-middle:hover,
+#deploy-middle.active {
+	/*background: url(../img/support_active.png) no-repeat;
+	background-position: -743px -85px;
+}*/
+
+                
+#integration-progiciel {
+	position: absolute;
+	width: 648px;
+	height: 78px;
+	/*background: url(../img/integration_progiciel.png) no-repeat;*/
+	background-position: -5px -586px;
+	top: 346px;
+	left: 192px;
+}
+
+#integration-progiciel:hover,
+#integration-progiciel.active {
+	/*background: url(../img/integration_progiciel_active.png) no-repeat;*/
+	background-position: -8px -653px;
+}
+
+#formation {
+	position: absolute;
+	width: 647px;
+	height: 48px;
+	/*background: url(../img/formation.png) no-repeat;*/
+	background-position: -10px -486px;
+	top: 429px;
+	left: 192px;
+}
+
+#formation:hover,
+#formation.active {
+	/*background: url(../img/formation_active.png) no-repeat;*/
+	background-position: -9px -537px
+}
+
+/* Description */
+.desc-hidden {
+	display: none;	
+}
+
+.table-desc {
+	position: relative;
+	width: 850px;
+	height: 550px;
+	background: url(../img/background_popup.png) no-repeat 50% 50%;
+}
+
+.services-popup-content {
+    position: absolute;
+    width: 750px;
+    height: 500px;
+	margin-top: 25px;
+	margin-left: 50px;
+}
+
+.popup-content-scrollable {
+	position: relative;
+	height: 400px;
+	overflow: auto;
+}
+
+.desc-title {
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 22px;
+	color: #ED1C24;	
+	margin: 0 0 25px 35px;
+	padding: 25px 0 0 0;
+}
+
+.desc-subtitle {
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #ED1C24;	
+	margin: 0 0 10px 25px;
+	padding: 25px 0 0 0;
+}
+
+.desc-text {
+	margin: 0 35px;
+	text-align: justify;
+}
+
+.desc-text img {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.desc-text p strong {
+    color: #ED1C24;
+    font-weight: normal;
+}
+
+.related-project {
+	margin: 0 52px;
+	padding-bottom: 20px;	
+}
+
+.small-title-service {
+    font-size: 14px;
+    color: #ED1C24;
+    font-weight: normal;
+    margin: 20px 0 30px 0;
+}
+
+.logo-techno {
+    text-align: center;
+}
+
+.logo-techno li {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: 800ms;
+}
+
+.logo-techno li:hover {
+    transition: 500ms;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.ref-services {
+    margin-left: 115px;
+}
+
+.ref-services img { margin-top: 0px !important; }
+.logo-techno img{ margin-top: 0px !important; }
+
+.next-pop-up {
+    background: url("../img/button_next_page.png") no-repeat scroll 0 0 transparent;
+    color: white;
+    display: block;
+    font-size: 16px;
+    height: 22px;
+    padding-top: 3px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    float: right;
+}
+
+.arrow-service {
+    background: url("../img/arrow_services.png") no-repeat;
+    display: block;
+    height: 62px;
+    width: 45px;
+}
+
+.arrow-one {
+    position: absolute;
+    left: 145px;
+    top: 25px;
+}
+
+.arrow-two {
+    position: absolute;
+    left: 350px;
+    top: 25px;
+}
+
+.arrow-three {
+    position: absolute;
+    left: 610px;
+    top: 25px;
+}
+

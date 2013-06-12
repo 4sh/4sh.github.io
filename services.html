@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<!--[if IE 7]> <html class="ie7 oldie" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="ie8 oldie" lang="fr"> <![endif]-->
+<!--[if IE 9]> <html class="ie9 " lang="fr"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fr" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>4SH Editeurs - Developpement - Services</title>
+<link rel="stylesheet" type="text/css" href="css/4sh_create_bloc.css">
+<link rel="stylesheet" type="text/css" href="css/4sh_style.css"/>
+<link rel="stylesheet" type="text/css" href="css/4sh_text_layout.css">
+<link rel="stylesheet" type="text/css" href="css/4sh_services.css">
+<link rel="stylesheet" type="text/css" href="css/tiptip.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/jScrollPane.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.tipTip.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="js/jScrollPane-1.2.3.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(".hoverable").fancybox({
+			'autoScale'			: true,
+			'transitionIn'		: 'fade',
+			'transitionOut'		: 'fade',
+			'overlayColor'		: '#f5f4f2',
+			'titleShow'			: false,
+			'onComplete' 		: function() { $('#fancybox-content .popup-content-scrollable').jScrollPane(); }
+		});
+	});
+
+    $(function(){
+        $(".tiptip").tipTip({});
+    });
+	
+</script>
+
+</head>
+
+<body>
+	<div id="container">
+    	<div id="header">
+        	<div id="h-left">
+				<h1 id="logo"><a href="index.html" title="4SH"><span class="span-hidden">4SH</span></a></h1>
+                <p id="slogan">editeurs - developpement - services
+                <span id="slogan-line2">Votre développement vous appartient</span>
+                </p>
+            </div>
+            
+            <div id="h-right">
+                <a href="#" title="Version anglaise" id="lang-uk"><span class="span-hidden">Version anglaise</span></a>
+                <a href="index.html" title="Version francaise" id="lang-fr"><span class="span-hidden">Version francaise</span></a>
+            </div>
+            
+            <hr/>
+            
+            <ul id="nav">
+                <li class="nav-item accueil"><a href="index.html" title="Accueil">A<span class="small-caps-button">ccueil</span></a></li>
+                <li class="nav-item active services"><a href="services.html" title="Accueil">S<span class="small-caps-button">ervices</span></a></li>
+                <li class="nav-item savoir-faire"><a href="savoir_faire.html" title="Découvrez nos compétences">S<span class="small-caps-button">avoir Faire</span></a></li>
+                <li class="nav-item references"><a href="references.html" title="Consultez nos références">R<span class="small-caps-button">éférences</span></a></li>
+                <li class="nav-item contact"><a href="contact.html" title="Pour nous contacter">C<span class="small-caps-button">ontact</span></a></li>
+            </ul>
+            
+        </div> 
+        
+        <div id="content">
+        	<!-- Create blackboard -->
+        	<div id="services-table">
+            	<div id="discover">
+                    <a class="tiptip" title="Auditer les technologies ou le positionnement de vos produits pour définir les plans d'action.">
+                        <div id="discover-top" href="#discover-top-desc"  class="blackboard-item">&nbsp;</div>
+                    </a>
+                    <span class="arrow-service arrow-three"></span>
+                	<a id="discover-middle" href="#" class="blackboard-item " title="Discover">&nbsp;</a>
+                    <a id="discover-bottom" href="#discover-bottom-desc" class="blackboard-item" title="Audit - Conseil">&nbsp;</a>
+                </div>
+            	
+                <div class="table-arrow">&nbsp;</div>
+
+                <div id="design">
+                    <a class="tiptip" title="Spécifier le comportement du produit par rapport aux processus métiers couverts et définir les Packages de dévelloppement.">
+                        <div id="design-top"  href="#design-top-desc" class="blackboard-item">&nbsp;</div>
+                    </a>
+                    <span class="arrow-service arrow-two"></span>
+                	<a id="design-middle" href="#design-middle-desc" class="blackboard-item " title="Specification">&nbsp;</a>
+                    <a id="design-bottom" href="#design-bottom-desc" class="blackboard-item hoverable" title="Design graphique">&nbsp;</a>
+                </div>
+
+                
+                <div class="table-arrow">&nbsp;</div>
+                
+                <div id="develop">
+                    <a class="tiptip" title="Concevoir et développer les produits suivant différents modes (forfait,assistance technique et maintenance évolutive,...) adaptés à vos exigences et vos contraintes.">
+                        <div id="develop-top" class="blackboard-item" href="#develop-top-desc">&nbsp;</div>
+                    </a>
+                    <span class="arrow-service arrow-one"></span>
+                    <div id="develop-dot-net" class="blackboard-item">&nbsp;</div>
+                    <a id="develop-dot-net-develop" href="#develop-dot-net-develop-desc" class="blackboard-item" title=".Net - Developpement">&nbsp;</a>
+                    <a id="develop-dot-net-maintenance" href="#develop-dot-net-maintenance-desc" class="blackboard-item" title=".Net - Maintenance">&nbsp;</a>
+                    
+                    <div id="develop-java" class="blackboard-item">&nbsp;</div>
+                    <a id="develop-java-develop" href="#develop-java-develop-desc" class="blackboard-item hoverable" title="JAVA - Developpement">&nbsp;</a>
+                    <a id="develop-java-maintenance" href="#develop-java-maintenance-desc" class="blackboard-item" title="JAVA - Maintenance">&nbsp;</a>
+                </div>
+                
+                <div class="table-arrow">&nbsp;</div>
+                
+                <div id="deploy">
+                    <a class="tiptip" title="Industrialiser les produits à travers la mise en place de tests techniques et fonctionnels pour garantir la qualité de leur déploiement.">
+                        <div id="deploy-top" class="blackboard-item"  href="#deploy-top-desc">&nbsp;</div>
+                    </a>
+                	<a id="deploy-middle" href="#deploy-middle-desc" class="blackboard-item" title="Support - Industrialisation">&nbsp;</a>
+                </div>
+                
+                <a id="integration-progiciel" href="#integration-progiciel-desc" class="blackboard-item hoverable" title="Support - Integration Progiciel">&nbsp;</a>
+                <a id="formation" href="#formation-desc" class="blackboard-item hoverable" title="Formation">&nbsp;</a>
+            </div>  
+
+			<!-- START description blocs -->
+
+            <!-- START BLOC -->
+            <div class="desc-hidden">
+                <div id="discover-top-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            Discover
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>Formaliser les exigences, définir les versions et la trajectiore du produit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END BLOC -->
+
+            <!-- START BLOC -->
+            <div class="desc-hidden">
+                <div id="design-top-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            Design
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>Spécifier le comportement du produit par rapport aux processus métiers couverts et définir les "packages" de développement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END BLOC -->
+
+            <!-- START BLOC -->
+            <div class="desc-hidden">
+                <div id="develop-top-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            Develop
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>Concevoir et développer les produits suivant différents modes (forfait, assistance technique, et maintenance évolutive,...) adaptés à vos exigences et vos contraintes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END BLOC -->
+
+            <!-- START BLOC -->
+            <div class="desc-hidden">
+                <div id="deploy-top-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            Deploy
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>Industrialiser les produits à travers la mise en place de tests techniques et fonctionnels pour garantir la qualité de leur déploiement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END BLOC -->
+<!--
+
+            <div class="desc-hidden">
+                <div id="discover-bottom-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            Audit et Conseil
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>Auditer les technologies ou le positionnement de vos produits pour définir les plans d'action</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ -->
+
+            <!-- START BLOC -->
+            <div class="desc-hidden">
+                <div id="design-middle-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            Specification
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>In facilisis scelerisque dui vel dignissim. Sed nunc orci, ultricies congue vehicula quis, facilisis a orci. In aliquet facilisis condimentum. Donec at orci orci, a dictum justo. Sed a nunc non lectus fringilla suscipit. Vivamus pretium sapien sit amet mauris aliquet eleifend vel vitae arcu. Fusce pharetra dignissim nisl egestas pretium.  </p>
+                            </div>
+
+                            <div class="desc-subtitle">Projet en relation</div>
+
+                            <ul class="related-project">
+                                <li><a href="" title="">Projet 1</a></li>
+                                <li><a href="" title="">Projet 2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="design-bottom-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            Design Graphique
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                    <p>Intégré à l'équipe de développement, nos graphistes assurent la qualité visuelle de vos applications.</p>
+                                    <h2 class="small-title-service">Technologies :</h2>
+                                <ul class="logo-techno">
+                                    <li><img title="Photoshop" src="img/logo_techno/photoshop.png"></li>
+                                    <li><img title="Illustrator" src="img/logo_techno/illustrator.png"></li>
+                                    <li><img title="HTML5" src="img/logo_techno/html5.png"></li>
+                                    <li><img title="CSS3" src="img/logo_techno/css3.png"></li>
+                                    <li><img title="Jquery" src="img/logo_techno/jquery-big.png"></li>
+                                </ul>
+                                <h1 class="small-title-service">Références:</h1>
+                                <a class="ref-services" href="#" title="Références Design"><img  title="Services Design" src="img/services/service-design.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+			 <!--END BLOC -->
+            
+            <!-- START BLOC
+            <div class="desc-hidden">
+                <div id="develop-dot-net-develop-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            .NET Developpement
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>Fusce a metus eu diam varius congue nec nec sapien. Vestibulum orci tortor, sollicitudin ac euismod non, placerat ac augue. Nunc convallis accumsan justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec malesuada vehicula lectus, viverra sodales ipsum gravida nec. Integer gravida nisi ut magna mollis molestie. Nullam pharetra accumsan sagittis. Proin tristique rhoncus orci, eget vulputate nisi sollicitudin et. Quisque lacus augue, mollis non mollis et, ullamcorper in purus. Morbi et sem orci. Praesent accumsan odio in ante ullamcorper id pellentesque mauris rhoncus. Duis vitae neque dolor. Duis sed purus at eros bibendum cursus nec a nulla. Donec turpis quam, ultricies id pretium sit amet, gravida eget leo.  </p>
+        
+                                <p>In facilisis scelerisque dui vel dignissim. Sed nunc orci, ultricies congue vehicula quis, facilisis a orci. In aliquet facilisis condimentum. Donec at orci orci, a dictum justo. Sed a nunc non lectus fringilla suscipit. Vivamus pretium sapien sit amet mauris aliquet eleifend vel vitae arcu. Fusce pharetra dignissim nisl egestas pretium.  </p>
+                            </div>
+                            
+                            <div class="desc-subtitle">Projet en relation</div>
+                            
+                            <ul class="related-project">
+                                <li><a href="" title="">Projet 1</a></li>
+                                <li><a href="" title="">Projet 2</a></li>
+                                <li><a href="" title="">Projet 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
+            </div>         
+			 END BLOC -->
+            
+            <!-- START BLOC
+            <div class="desc-hidden">
+                <div id="develop-dot-net-maintenance-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            .NET Maintenance
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>Fusce a metus eu diam varius congue nec nec sapien. Vestibulum orci tortor, sollicitudin ac euismod non, placerat ac augue. Nunc convallis accumsan justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec malesuada vehicula lectus, viverra sodales ipsum gravida nec. Integer gravida nisi ut magna mollis molestie. Nullam pharetra accumsan sagittis. Proin tristique rhoncus orci, eget vulputate nisi sollicitudin et. Quisque lacus augue, mollis non mollis et, ullamcorper in purus. Morbi et sem orci. Praesent accumsan odio in ante ullamcorper id pellentesque mauris rhoncus. Duis vitae neque dolor. Duis sed purus at eros bibendum cursus nec a nulla. Donec turpis quam, ultricies id pretium sit amet, gravida eget leo.  </p>
+        
+                                <p>In facilisis scelerisque dui vel dignissim. Sed nunc orci, ultricies congue vehicula quis, facilisis a orci. In aliquet facilisis condimentum. Donec at orci orci, a dictum justo. Sed a nunc non lectus fringilla suscipit. Vivamus pretium sapien sit amet mauris aliquet eleifend vel vitae arcu. Fusce pharetra dignissim nisl egestas pretium.  </p>
+                            </div>
+                            
+                            <div class="desc-subtitle">Projet en relation</div>
+                            
+                            <ul class="related-project">
+                                <li><a href="" title="">Projet 1</a></li>
+                                <li><a href="" title="">Projet 2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>          
+			 END BLOC -->
+            
+            <!-- START BLOC -->
+            <div class="desc-hidden">
+                <div id="develop-java-develop-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            Développement Java/Web/Flex
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>L'expertise reconnue de <strong>4SH</strong> dans le monde de JavaEE et Oracle ADF nous permet de couvrir tous vos besoins: accompagnement, réalisation, formation, expertise,etc.</p>
+                                <h1 class="small-title-service">Technologies :</h1>
+                                <ul class="logo-techno">
+                                    <li><img title="FX" src="img/logo_techno/fx.png"></li>
+                                    <li><img title="Java" src="img/logo_techno/java.png"></li>
+                                    <li><img title="Mysql" src="img/logo_techno/mysql.png"></li>
+                                    <li><img title="Spring" src="img/logo_techno/spring.png"></li>
+                                    <li><img title="Backbone" src="img/logo_techno/backbonejs.png"></li>
+                                    <li><img title="Oracle" src="img/logo_techno/oracle.png"></li>
+                                    <li><img title="Tomcat" src="img/logo_techno/tomcat.png"></li>
+                                </ul>
+                                <h1 class="small-title-service">Références:</h1>
+                                <a class="ref-services" href="#" title="Références Développement"><img class="img-project" title="Services Développement Java/Web/Flex" src="img/services/service-dev.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>        
+			<!--END BLOC -->
+            
+            <!-- START BLOC
+            <div class="desc-hidden">
+                <div id="develop-java-maintenance-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            JAVA Maintenance
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>In facilisis scelerisque dui vel dignissim. Sed nunc orci, ultricies congue vehicula quis, facilisis a orci. In aliquet facilisis condimentum. Donec at orci orci, a dictum justo. Sed a nunc non lectus fringilla suscipit. Vivamus pretium sapien sit amet mauris aliquet eleifend vel vitae arcu. Fusce pharetra dignissim nisl egestas pretium.  </p>
+                            </div>
+                            
+                            <div class="desc-subtitle">Projet en relation</div>
+                            
+                            <ul class="related-project">
+                                <li><a href="" title="">Projet 1</a></li>
+                                <li><a href="" title="">Projet 2</a></li>
+                            </ul>
+                      	</div>
+                    </div>
+                </div>    
+            </div>        
+			END BLOC -->
+            
+            <!-- START BLOC
+            <div class="desc-hidden">
+                <div id="deploy-middle-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            Support et Industrialisation
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>Fusce a metus eu diam varius congue nec nec sapien. Vestibulum orci tortor, sollicitudin ac euismod non, placerat ac augue. Nunc convallis accumsan justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec malesuada vehicula lectus, viverra sodales ipsum gravida nec. Integer gravida nisi ut magna mollis molestie. Nullam pharetra accumsan sagittis. Proin tristique rhoncus orci, eget vulputate nisi sollicitudin et. Quisque lacus augue, mollis non mollis et, ullamcorper in purus. Morbi et sem orci. Praesent accumsan odio in ante ullamcorper id pellentesque mauris rhoncus. Duis vitae neque dolor. Duis sed purus at eros bibendum cursus nec a nulla. Donec turpis quam, ultricies id pretium sit amet, gravida eget leo.  </p>
+        
+                                <p>In facilisis scelerisque dui vel dignissim. Sed nunc orci, ultricies congue vehicula quis, facilisis a orci. In aliquet facilisis condimentum. Donec at orci orci, a dictum justo. Sed a nunc non lectus fringilla suscipit. Vivamus pretium sapien sit amet mauris aliquet eleifend vel vitae arcu. Fusce pharetra dignissim nisl egestas pretium.  </p>
+                                
+                                <p>In facilisis scelerisque dui vel dignissim. Sed nunc orci, ultricies congue vehicula quis, facilisis a orci. In aliquet facilisis condimentum. Donec at orci orci, a dictum justo. Sed a nunc non lectus fringilla suscipit. Vivamus pretium sapien sit amet mauris aliquet eleifend vel vitae arcu. Fusce pharetra dignissim nisl egestas pretium.  </p>
+                                
+                                <p>In facilisis scelerisque dui vel dignissim. Sed nunc orci, ultricies congue vehicula quis, facilisis a orci. In aliquet facilisis condimentum. Donec at orci orci, a dictum justo. Sed a nunc non lectus fringilla suscipit. Vivamus pretium sapien sit amet mauris aliquet eleifend vel vitae arcu. Fusce pharetra dignissim nisl egestas pretium.  </p>
+                            </div>
+                            
+                            <div class="desc-subtitle">Projet en relation</div>
+                            
+                            <ul class="related-project">
+                                <li><a href="" title="">Projet 1</a></li>
+                                <li><a href="" title="">Projet 2</a></li>
+                                <li><a href="" title="">Projet 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>          
+			 END BLOC -->
+            
+            <!-- START BLOC -->
+            <div class="desc-hidden">
+                <div id="integration-progiciel-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            Support et Integration Progiciel
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>Vous aidez à intégrer vos produits ou à mettre en place de nouvelles méthodes ou organisations.</p>
+                                <img src="img/img-1.jpg" width="500px">
+                            </div>
+                    	</div>
+                    </div>
+                </div>
+            </div>        
+			<!-- END BLOC -->
+            
+            <!-- START BLOC -->
+            <div class="desc-hidden">
+                <div id="formation-desc" class="table-desc">
+                    <div class="services-popup-content">
+                        <div class="desc-title">
+                            Formation
+                        </div>
+                        <div class="popup-content-scrollable">
+                            <div class="desc-text">
+                                <p>Former vos équipes techniques (outils, architectures, ou technologies) et fonctionnelles (méthodes ou démarches).</p>
+                                <img src="img/img-2.jpg" width="500px">
+                            </div>
+                    	</div>
+                    </div>
+                </div>    
+            </div>        
+			<!-- END BLOC -->
+            <!-- END description blocs -->
+
+            <hr />
+		</div>
+        
+        <div id="footer">
+        	<div id="f-left">
+            	<p>SYNTYS 4SH  Editeurs Développement Services   | Updated : 26/10/2012</p>
+            </div>
+            
+            <div id="f-right">
+            	<ul id="f-nav">
+                	<li class="f-nav-item"><a href="mentions_legales.html" title="Mentions Légales">Mentions Légales</a></li>
+                    <li class="f-nav-item"><p>|</p></li>
+                    <li class="f-nav-item"><a href="contact.html" title="Nous contacter">Nous contacter</a></li>
+                    <li class="f-nav-item"><p>|</p></li>
+                    <li class="f-nav-item"><a href="plaquette4sh.pdf" title="Télécharger la plaquette">Télécharger la plaquette</a></li>
+                </ul>
+            </div>  
+            
+            <hr />          
+        </div>        
+    </div>
+</body>
+</html>

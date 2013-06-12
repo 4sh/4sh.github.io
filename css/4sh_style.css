@@ -1,0 +1,488 @@
+/* CSS : 4SH global style */
+
+html, body {
+	font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+	font-size: 13px;
+	line-height: 1.3em;
+	color: #666666;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #e8e8e8;	
+}
+
+*::selection {
+	background:#eb272d;
+	color:#fff;
+}
+
+hr {
+	clear: both;
+	visibility: hidden;	
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;	
+	color: #ED1C24;
+}
+
+ul, p {
+	margin: 7px 0 0 0;
+	padding: 0;	
+}
+
+img {
+    border: none;
+}
+
+.span-hidden {
+	display: none;	
+}
+
+#container {
+	position: relative;
+	width : 955px;
+	min-height: 100%;
+	background-color: #f5f4f2;
+	margin: 0 auto 0;
+}
+
+/* ---- HEADER ---- */
+#header {
+	width: 955px;
+	width: 940px !important;
+	height: 103px;
+	height: 85px !important;
+	background-color: #FFFFFF;	
+	margin: 0 0 20px 0;
+	padding: 18px 0 0 15px;
+}
+
+#header #h-left {
+	width: 45%;
+	float: left;
+}
+
+#logo {
+	display: block;
+	width: 118px;
+	height: 36px;
+	background: url('../img/logo_4sh.png') no-repeat;
+	margin: 0;
+	float: left;
+}
+
+#logo a {
+	display: block;
+	width: 118x;
+	height: 36px;
+	color: #666666;
+	text-decoration: none;	
+}
+
+#slogan {
+	display: inline-block;
+	text-transform: uppercase;	
+	font-size: 14px;
+	font-weight:normal;
+	margin: 0 0 0 11px;
+	padding: 0;
+}
+
+.ie7 #slogan {
+	float: left;
+	margin: -3px 0 0 11px;	
+}
+
+#slogan #slogan-line2 {
+	display: block;
+	text-transform: none;
+	font-family: "Georgia", "Times New Roman", "Times", serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	color: #ed1c24;
+	margin: 0;
+	padding: 0;	
+}
+
+#header #h-right {
+	width: 45%;
+	float: right;
+}
+
+#syntys {
+	display: block;
+	width: 116px;
+	height: 34px;
+	background: url('../img/logo_syntys.png') no-repeat;
+	float: right;
+	margin: 0 15px 0 0;
+	color: #666666;
+	text-decoration: none;
+}
+
+#lang-fr {
+	display: block;
+	width: 16px;
+	height: 11px;
+	background: url('../img/flag_fr.png')	no-repeat;
+	color: #666666;
+	text-decoration: none;
+	float: right;
+	margin: 6px 8px 0 0;
+}
+
+#lang-uk {
+	display: block;
+	width: 16px;
+	height: 11px;
+	background: url('../img/flag_uk.png')	no-repeat;
+	color: #666666;
+	text-decoration: none;
+	float: right;
+	margin: 6px 24px 0 0;
+}
+
+/* -- header : menu -- */
+#nav {
+	list-style-type: none;	
+	margin: 15px 0 0 0;
+	padding: 0;
+}
+
+#nav .nav-item {
+	display: inline-block;
+	margin-right: 30px;
+	vertical-align: middle;
+	height: 23px;
+}
+
+.ie7 #nav .nav-item {
+	float: left;
+	margin-top: -15px;	
+}
+
+#nav .nav-item a {
+	display: block;
+	text-decoration: none;
+	color: #666666;	
+	font-size: 16px;
+	text-align: center;
+}
+
+#nav .nav-item a, x:-moz-any-link, x:default {
+    transition: 500ms;
+	margin-top: 3px;
+}
+
+.ie7 #nav .nav-item a {
+	margin-top: 0px;	
+}
+
+.ie9 #nav .nav-item a {
+	margin-top: 2px;	
+}
+
+#nav .nav-item:hover a {
+    transition: 400ms;
+	text-decoration: none;
+	color: #ED1C24;	
+}
+
+#nav .nav-item.accueil { width: 70px;}
+#nav .nav-item.accueil.active { background: url('../img/button_accueil.png') no-repeat; }
+
+#nav .nav-item.services { width: 70px;}
+#nav .nav-item.services.active { background: url('../img/button_services.png') no-repeat; }
+
+#nav .nav-item.savoir-faire { width: 98px;}
+#nav .nav-item.savoir-faire.active { background: url('../img/button_savoir_faire.png') no-repeat; }
+
+#nav .nav-item.references { width: 88px;}
+#nav .nav-item.references.active { background: url('../img/button_references.png') no-repeat; }
+
+#nav .nav-item.contact{ width: 70px;}
+#nav .nav-item.contact.active { background: url('../img/button_contact.png') no-repeat; }
+
+#nav .nav-item.accueil.active a, 
+#nav .nav-item.services.active a,
+#nav .nav-item.savoir-faire.active a, 
+#nav .nav-item.references.active a, 
+#nav .nav-item.contact.active a { color: #FFFFFF;}
+
+
+/* ---- SLIDESHOW ---- : #container #slideshow { see slideshow.css; } */
+
+/* ---- CONTENT ---- */
+#content { 
+	margin-top: 12px;
+	padding-bottom: 71px;
+}
+
+/* -- content : generals blocs -- : .small-bloc, .medium-bloc, .large-bloc  { see create_bloc.css; } */
+
+
+.small-bloc-title {
+	padding: 0;
+	margin:  0 0 10px;
+}
+
+.small-bloc-title-red {
+    margin: 0;
+    margin-left: 15px;
+    font-size: 26px;
+    color: #ed1c24;
+    font-family: Georgia;
+    font-weight: normal;
+    line-height: 1.2em;
+}
+.small-content .text-defis {
+    margin-left: 16px;
+    margin-right: 10px;
+}
+
+
+.list-defis {
+    margin: 10px 0 0 30px;
+    font-weight: bold;
+}
+
+/* - Specifics blocs : small - */
+#news-twitter {
+	height: 310px;	
+	margin-left: 43px;
+	float: left;
+}
+
+#customers-accounts {
+	height: 310px;
+	margin-right: 44px;
+	float: right;	
+}
+
+#news-twitter .small-bloc-title {
+    display: inline-block;
+    font-size: 17px;
+    margin: 0 0 0 59px;
+}
+
+#news-twitter .twitter-follow-button {
+	position: absolute;
+	top: 21px;
+	right: 21px;
+}
+
+#news-twitter .small-content, 
+#customers-accounts .small-content { 
+	height: 300px;
+	height: 280px !important;
+}
+
+#news-twitter #bird-twitter {
+	position: absolute;
+	top: -10px;
+	left: 15px;
+}
+
+/* Height specific */
+
+.info-techno .small-content {
+	height: 293px;	
+}
+
+/* - Specifics blocs : large - */
+
+#tag-criterion .large-content { padding: 20px; }
+
+#tag-criterion .large-content #criterion {
+	margin: 0 auto;
+}
+
+#tag-criterion .large-content #criterion a {
+	text-decoration: none;
+	color: #666666;
+}
+
+#tag-criterion .large-content #criterion a:hover {
+	text-decoration: none;
+	color: #ED1C24;
+}
+
+#tag-criterion .large-content #criterion a.active {
+	text-decoration: underline;
+	color: #ED1C24;
+}
+
+#tag-criterion .large-content #criterion tr td {
+	width: 200px;	
+}
+
+/* Padding specifics */
+
+.header-ref-detail .medium-content {
+	padding: 0;	
+}
+
+/* ---- FOOTER ---- */
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 10px;	
+	height: 41px;
+	outline: none;
+}
+
+#footer #f-left {
+	float: left;
+	margin: 0 0 0 15px;
+}
+
+#footer #f-right {
+	float: right;
+	margin: 0 15px 0 0;
+}
+
+#f-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#f-nav .f-nav-item {
+	display: inline-block;	
+}
+
+.ie7 #f-nav .f-nav-item {
+	float: left;	
+	padding-top: 6px;
+	margin: 0 2px;
+}
+
+#f-nav .f-nav-item a {
+	color: #666666;	
+	text-decoration: none;
+}
+
+#f-nav .f-nav-item a:hover {
+	color: #ED1C24;
+	text-decoration: none;
+}
+
+#bloc-mentions-legals {
+    padding: 30px 0 30px 0px;
+    margin: 0 auto;
+    width: 930px;
+    background: url("../img/background_large_bloc.png") repeat-y;
+}
+
+.text-mentions-legals {
+    width: 870px;
+    margin: 0 auto;
+}
+
+.titre1 {
+    color: hsl(0, 0%, 27%);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.texte3 {
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+/* Back Button */
+
+.back-button {
+	display: block;
+	width: 87px;
+	height: 22px;
+	margin: 10px auto 0;
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	background: url(../img/button_retour.png) no-repeat;
+    padding-top: 3px;
+}
+
+.ie9 .back-button {
+	padding-top: 2px;	
+	height: 20px;
+}
+
+.back-chevron {
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -3px;
+	letter-spacing: -3px;
+}
+
+.ie9 .back-chevron {
+	margin-top: -2px;	
+}
+/* Contact */
+
+.title-bloc {
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 22px;
+	color: #ED1C24;	
+	margin: 0 0 25px 25px;
+	padding: 25px 0 0 0;
+}
+
+.container-item-contact {
+	width: 745px;
+	margin: 0 auto 0;	
+}
+
+.item-contact {
+	display: inline-block;
+	width: 245px;
+	width: 235px !important;
+	height: 188px;
+	padding: 0 0 0 10px;
+	background: url(../img/background_item_contact.png) no-repeat 0% 0%;	
+}
+
+.ie7 .item-contact {
+	float: left;	
+}
+
+.name-contact {
+	display: block;	
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: #ED1C24;	
+	margin: 30px 0 0 0;
+}
+
+
+
+.phone-contact, 
+.mail-contact,
+.adress-contact,
+.zip-code-contact,
+.job-contact {
+	display: block;
+	margin: 0 0;
+	font-size: 13px;	
+	line-height: 17px;
+	vertical-align: top;
+}
+
+.job-contact {
+    font-style: italic;
+    margin-left: -1px;
+	margin-bottom: 5px;
+}

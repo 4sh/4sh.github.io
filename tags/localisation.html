@@ -1,0 +1,50 @@
+ <!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Méthodologie</title>
+<link rel="stylesheet" type="text/css" href="../css/4sh_style.css"/>
+<link rel="stylesheet" type="text/css" href="../css/4sh_tags_popup.css"/>
+<link rel="stylesheet" type="text/css" href="../css/4sh_text_layout.css">
+<link rel="stylesheet" type="text/css" href="../css/jScrollPane.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../js/jScrollPane-1.2.3.min.js"></script>
+<script type="text/javascript">
+
+	$(function()
+	{
+		$('.popup-content').jScrollPane();
+	});
+
+</script>
+</head>
+
+<body>
+<div class="popup-container">
+	<div class="popup-title">
+		Localisation.
+    </div>
+    
+    <div class="popup-content">
+    	<div style="float: left;">
+    	<div class="item-contact popup-localisation">
+            <span class="name-contact"><img src="../img/mini_logo_4sh.png" width="45" height="14" border="0"/> PARIS</span>
+            <span class="adress-contact">2 Bis rue Michelet,</span>
+            <span class="zip-code-contact">92130 I<span class="small-caps-contact">ssy les</span> M<span class="small-caps-contact">oulineaux</span></span>
+            <span class="phone-contact">Téléphone : +33 (0)1 46 44 38 22</span>
+        </div>
+        
+        <div class="item-contact popup-localisation">
+            <span class="name-contact"><img src="../img/mini_logo_4sh.png" width="45" height="14" border="0"/> BORDEAUX</span>
+            <span class="adress-contact">13 place Charles de Gaulle,</span>
+            <span class="zip-code-contact">33700 M<span class="small-caps-contact">érignac</span></span>
+            <span class="phone-contact">Téléphone : +33 (0)9 63 28 62 73</span>
+        </div>
+        </div>
+        <img id="img-localisation" src="../img/localisation_visuel.png" width="345" height="300" alt="Carte de France" border="0"/>
+                       
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.small-caps-button {
+	text-transform: uppercase;
+	font-size: 13px;	
+}
+
+.small-caps-ref-title {
+	text-transform: uppercase;
+	font-size: 18px;		
+}
+
+.small-caps-contact {
+	text-transform: uppercase;
+	font-size: 11px;	
+}
+.red-text {
+	color: #eb272d;	
+}
