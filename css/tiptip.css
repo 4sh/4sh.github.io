@@ -3,8 +3,8 @@
 #tiptip_holder {
 	display: none;
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	z-index: 99999;
 }
 
@@ -26,12 +26,11 @@
 
 #tiptip_content {
 	font-size: 11px;
-    width: 200px;
-	color: #464646;
-	padding: 4px 8px;
+	color: #494849;
+    text-align: center;
+	padding: 15px 30px;
 	border: 1px solid rgba(255,255,255,0.25);
-	background-color: #ffffff;
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(#000));
+	background-color: #ffffff !important;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -51,28 +50,23 @@
 
 #tiptip_holder.tip_top #tiptip_arrow {
 	border-top-color: #fff;
-	border-top-color: rgba(255,255,255,0.35);
 }
 
 #tiptip_holder.tip_bottom #tiptip_arrow {
 	border-bottom-color: #fff;
-	border-bottom-color: rgba(255,255,255,0.35);
 }
 
 #tiptip_holder.tip_right #tiptip_arrow {
 	border-right-color: #fff;
-	border-right-color: rgba(255,255,255,0.35);
 }
 
 #tiptip_holder.tip_left #tiptip_arrow {
 	border-left-color: #fff;
-	border-left-color: rgba(255,255,255,0.35);
 }
 
 #tiptip_holder.tip_top #tiptip_arrow_inner {
 	margin-top: -7px;
 	margin-left: -6px;
-	border-top-color: #ffffff;
 	border-top-color: #ffffff;
 }
 
@@ -80,13 +74,11 @@
 	margin-top: -5px;
 	margin-left: -6px;
 	border-bottom-color: #ffffff;
-	border-bottom-color: #ffffff;
 }
 
 #tiptip_holder.tip_right #tiptip_arrow_inner {
 	margin-top: -6px;
 	margin-left: -5px;
-	border-right-color: #ffffff;
 	border-right-color: #ffffff;
 }
 
@@ -94,19 +86,4 @@
 	margin-top: -6px;
 	margin-left: -7px;
 	border-left-color: #ffffff;
-	border-left-color: #ffffff;
-}
-
-/* Webkit Hacks  */
-@media screen and (-webkit-min-device-pixel-ratio:0) {	
-	#tiptip_content {
-		padding: 4px 8px 5px 8px;
-		background-color: rgba(45,45,45,0.88);
-	}
-	#tiptip_holder.tip_bottom #tiptip_arrow_inner { 
-		border-bottom-color: rgba(45,45,45,0.88);
-	}
-	#tiptip_holder.tip_top #tiptip_arrow_inner { 
-		border-top-color: rgba(20,20,20,0.92);
-	}
 }
