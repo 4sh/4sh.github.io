@@ -81,15 +81,8 @@
 }
 
 .screen-ref {
-    border: 1px #F5F4F2 solid;
     display: inline-block;
 	margin-top: 5px;
-    border-radius: 5px;
-    -moz-box-shadow: 1px 1px 5px 0px #656565;
-    -webkit-box-shadow: 1px 1px 5px 0px #656565;
-    -o-box-shadow: 1px 1px 5px 0px #656565;
-    box-shadow: 1px 1px 5px 0px #656565;
-    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
 }
 
 /*.ie7 .screen-ref {
