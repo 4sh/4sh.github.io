@@ -443,16 +443,34 @@ img {
 
 .container-item-contact {
 	width: 745px;
-	margin: 0 auto 0;	
+	margin: 0 auto 0;
+    margin-top: 50px;
 }
 
 .item-contact {
 	display: inline-block;
-	width: 245px;
 	width: 235px !important;
 	height: 188px;
 	padding: 0 0 0 10px;
 	background: url(../img/background_item_contact.png) no-repeat 0% 0%;	
+}
+
+.text-contact {
+    width: 450px;
+    height: auto;
+    float: right;
+    padding-right: 30px;
+}
+
+.text-contact p {
+    margin-bottom: 15px;
+}
+
+.illu-contact {
+    width: 130px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 60px;
 }
 
 .ie7 .item-contact {
@@ -465,6 +483,7 @@ img {
 	font-size: 18px;
 	color: #ED1C24;	
 	margin: 30px 0 0 0;
+    margin-bottom: 12px;
 }
 
 
