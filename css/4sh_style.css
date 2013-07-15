@@ -419,6 +419,12 @@ img {
 	height: 20px;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .small-caps-button {
+        line-height: 20px !important;
+    }
+}
+
 .back-chevron {
 	font-size: 12px;
 	display: inline-block;

@@ -1,6 +1,12 @@
 .small-caps-button {
 	text-transform: uppercase;
-	font-size: 13px;	
+	font-size: 13px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .small-caps-button {
+        line-height: 25px;
+    }
 }
 
 .small-caps-ref-title {
