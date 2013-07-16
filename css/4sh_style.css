@@ -172,19 +172,12 @@ img {
 	color: #666666;	
 	font-size: 16px;
 	text-align: center;
+    margin-top: 2px;
 }
 
 #nav .nav-item a, x:-moz-any-link, x:default {
     transition: 500ms;
 	margin-top: 3px;
-}
-
-.ie7 #nav .nav-item a {
-	margin-top: 0px;	
-}
-
-.ie9 #nav .nav-item a {
-	margin-top: 2px;	
 }
 
 #nav .nav-item:hover a {
