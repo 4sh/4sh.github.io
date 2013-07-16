@@ -1,15 +1,11 @@
 /* CSS : news twitter */
-
-#twitter-ticker{
-	margin: 22px auto 0;
-}
-
 #twitter-ticker{
 	width:360px;
-	height: 230px;
-	background:url(../img/twitter_image2.png) no-repeat #F5f5f5;
 	color:#666666;
 	display:none;
+    left: 32px;
+    position: absolute;
+    top: 10px;
 
 	-moz-border-radius:10px 10px 6px 6px;
 	-khtml-border-radius: 6px;
@@ -26,10 +22,10 @@
 }
 
 .tweet{
-	padding:5px;
+	padding:5px !important;
 	margin:0 8px 8px;
 	border:1px solid #F0F0F0;
-	background:url(../img/twitter_image1.png);	
+	background: transparent;
 	width:auto;
 	overflow:hidden;
 }
@@ -49,16 +45,12 @@
 }
 
 .tweet .avatar {
-	display: block;
-	width: auto;
-	float: left;
-}
-
-.tweet .avatar img{
-	width:36px;
-	height:36px;
-	border:2px solid #eeeeee;
-	margin:0 5px 5px 0;
+    display: inline-block;
+    height: 30px !important;
+    left: 0;
+    vertical-align: middle;
+    width: 30px !important;
+    position: static  !important;
 }
 
 .tweet .txt{
@@ -77,4 +69,71 @@ a:hover{
 
 #loading{
 	margin:100px 95px;
+}
+
+.timeline-footer {
+    display: none;
+}
+
+.timeline {
+    background-color: transparent !important;
+}
+
+.timeline-header h1.summary {
+    display: none;
+}
+
+.timeline-header {
+    height: 22px;
+}
+
+#news-twitter {
+    height: 310px;
+    margin-left: 43px;
+    float: left;
+}
+
+#news-twitter #bird-twitter {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    z-index: 2;
+}
+
+#news-twitter .small-content {
+    position: relative;
+}
+
+#news-twitter .small-bloc-title {
+    display: inline-block;
+    font-size: 17px;
+    left: 75px;
+    position: absolute;
+    top: 22px;
+    z-index: 2;
+}
+
+#news-twitter .twitter-follow-button {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+}
+
+.customisable-border {
+    border: none !important;
+}
+
+.timeline-header .twitter-follow-button {
+    right: 0 !important;
+}
+
+.timeline .stream {
+    background:url(../img/twitter_image2.png) no-repeat #F5f5f5;
+    overflow-y: auto !important;
+}
+
+.profile .full-name,
+.profile .p-nickname {
+    line-height: 30px;
+    vertical-align: middle;
 }
