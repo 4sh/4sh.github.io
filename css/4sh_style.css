@@ -77,7 +77,7 @@ img {
 
 #logo a {
 	display: block;
-	width: 118x;
+	width: 118px;
 	height: 36px;
 	color: #666666;
 	text-decoration: none;	
@@ -252,40 +252,16 @@ img {
 }
 
 /* - Specifics blocs : small - */
-#news-twitter {
-	height: 310px;	
-	margin-left: 43px;
-	float: left;
-}
-
 #customers-accounts {
 	height: 310px;
 	margin-right: 44px;
 	float: right;	
 }
 
-#news-twitter .small-bloc-title {
-    display: inline-block;
-    font-size: 17px;
-    margin: 0 0 0 59px;
-}
-
-#news-twitter .twitter-follow-button {
-	position: absolute;
-	top: 21px;
-	right: 21px;
-}
-
 #news-twitter .small-content, 
 #customers-accounts .small-content { 
 	height: 300px;
 	height: 280px !important;
-}
-
-#news-twitter #bird-twitter {
-	position: absolute;
-	top: -10px;
-	left: 15px;
 }
 
 /* Height specific */
