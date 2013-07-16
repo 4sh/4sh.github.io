@@ -149,10 +149,10 @@
     background: url(../img/ref/item_filter_selected.png) no-repeat 50% 50%;
 }
 
-
 #references-container {
   padding: 5px;
   margin: 0 auto 20px;
+  margin-bottom: 12px !important;
 }
 
 .element {
