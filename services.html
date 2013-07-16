@@ -14,29 +14,6 @@
 <link rel="stylesheet" type="text/css" href="css/tiptip.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/jScrollPane.css">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
-<script type="text/javascript" src="js/lib/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="js/lib/jquery.tipTip.js"></script>
-<script type="text/javascript" src="js/lib/jquery.fancybox-1.3.4.js"></script>
-<script type="text/javascript" src="js/lib/jScrollPane-1.2.3.min.js"></script>
-<script type="text/javascript">
-	$(function() {
-		$(".hoverable").fancybox({
-			'autoScale'			: true,
-			'transitionIn'		: 'fade',
-			'transitionOut'		: 'fade',
-			'overlayColor'		: '#f5f4f2',
-			'titleShow'			: false,
-			'onComplete' 		: function() { $('#fancybox-content .popup-content-scrollable').jScrollPane(); }
-		});
-	});
-
-    $(function(){
-        $(".tiptip").tipTip();
-    });
-
-</script>
-
 </head>
 
 <body>
@@ -70,8 +47,8 @@
         	<!-- Create blackboard -->
         	<div id="services-table">
             	<div id="discover">
-                    <a class="tiptip color-discover" title="Auditer les technologies ou le positionnement de vos produits pour définir les plans d'action.">
-                        <div id="discover-top" href="#discover-top-desc"  class="blackboard-item">&nbsp;</div>
+                    <a href="#discover-top-desc" class="color-discover">
+                        <div id="discover-top"  class="blackboard-item tiptip" title="Auditer les technologies ou le positionnement de vos produits pour définir les plans d'action.">&nbsp;</div>
                     </a>
                     <span class="arrow-service arrow-three"></span>
                 	<a id="discover-middle" href="#" class="blackboard-item " title="Discover">&nbsp;</a>
@@ -81,8 +58,8 @@
                 <div class="table-arrow">&nbsp;</div>
 
                 <div id="design">
-                    <a class="tiptip" title="Spécifier le comportement du produit par rapport aux processus métiers couverts et définir les Packages de dévelloppement.">
-                        <div id="design-top"  href="#design-top-desc" class="blackboard-item">&nbsp;</div>
+                    <a href="#design-top-desc">
+                        <div id="design-top" class="blackboard-item tiptip" title="Spécifier le comportement du produit par rapport aux processus métiers couverts et définir les Packages de dévelloppement.">&nbsp;</div>
                     </a>
                     <span class="arrow-service arrow-two"></span>
                 	<a id="design-middle" href="#design-middle-desc" class="blackboard-item " title="Specification">&nbsp;</a>
@@ -92,8 +69,8 @@
                 <div class="table-arrow">&nbsp;</div>
                 
                 <div id="develop">
-                    <a class="tiptip" title="Concevoir et développer les produits suivant différents modes (forfait,assistance technique et maintenance évolutive,...) adaptés à vos exigences et vos contraintes.">
-                        <div id="develop-top" class="blackboard-item" href="#develop-top-desc">&nbsp;</div>
+                    <a href="#develop-top-desc">
+                        <div id="develop-top" class="blackboard-item tiptip" title="Concevoir et développer les produits suivant différents modes (forfait,assistance technique et maintenance évolutive,...) adaptés à vos exigences et vos contraintes.">&nbsp;</div>
                     </a>
                     <span class="arrow-service arrow-one"></span>
                     <div id="develop-dot-net" class="blackboard-item">&nbsp;</div>
@@ -108,8 +85,8 @@
                 <div class="table-arrow">&nbsp;</div>
                 
                 <div id="deploy">
-                    <a class="tiptip" title="Industrialiser les produits à travers la mise en place de tests techniques et fonctionnels pour garantir la qualité de leur déploiement.">
-                        <div id="deploy-top" class="blackboard-item"  href="#deploy-top-desc">&nbsp;</div>
+                    <a  href="#deploy-top-desc">
+                        <div id="deploy-top" class="blackboard-item tiptip" title="Industrialiser les produits à travers la mise en place de tests techniques et fonctionnels pour garantir la qualité de leur déploiement.">&nbsp;</div>
                     </a>
                 	<a id="deploy-middle" href="#deploy-middle-desc" class="blackboard-item" title="Support - Industrialisation">&nbsp;</a>
                 </div>
@@ -447,4 +424,26 @@
         </div>        
     </div>
 </body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<script type="text/javascript" src="js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/lib/jquery.tipTip.js"></script>
+<script type="text/javascript" src="js/lib/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="js/lib/jScrollPane-1.2.3.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".hoverable").fancybox({
+            'autoScale'			: true,
+            'transitionIn'		: 'fade',
+            'transitionOut'		: 'fade',
+            'overlayColor'		: '#f5f4f2',
+            'titleShow'			: false,
+            'onComplete' 		: function() { $('#fancybox-content .popup-content-scrollable').jScrollPane(); }
+        });
+    });
+
+    $(function(){
+        $(".tiptip").tipTip();
+    });
+
+</script>
 </html>
