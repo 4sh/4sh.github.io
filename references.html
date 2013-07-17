@@ -9,6 +9,7 @@
     <title>4SH Editeurs - Developpement - Services</title>
     <link rel="stylesheet" type="text/css" href="css/4sh_create_bloc.css">
     <link rel="stylesheet" type="text/css" href="css/4sh_style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/ui.totop.css"/>
     <link rel="stylesheet" type="text/css" href="css/4sh_references.css">
     <link rel="stylesheet" type="text/css" href="css/4sh_text_layout.css">
     <link rel="stylesheet" type="text/css" href="css/style_isotope.css">
@@ -543,5 +544,22 @@
             <hr />          
         </div> 
     </div>
+    <a id="toTop" href="#" style="display: none"><span id="toTopHover"></span>To Top</a>
 </body>
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+         var defaults = {
+         containerID: 'toTop', // fading element id
+         containerHoverID: 'toTopHover', // fading element hover id
+         scrollSpeed: 1200,
+         easingType: 'linear'
+         };
+         */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
 </html>
