@@ -303,8 +303,10 @@ img {
 	bottom: 0;
 	width: 100%;
 	font-size: 10px;	
-	height: 41px;
+	height: 35px;
 	outline: none;
+    padding-top: 10px;
+    background: #ffffff;
 }
 
 #footer #f-left {
