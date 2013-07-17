@@ -82,3 +82,13 @@
     font-weight: normal;
     margin: 0;
 }
+
+.del-pdf li:hover  h2 {
+    transition: 400ms;
+    background: #ED1C24;
+    color: #ffffff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+}
