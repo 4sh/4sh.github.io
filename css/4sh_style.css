@@ -432,11 +432,16 @@ img {
 	background: url(../img/background_item_contact.png) no-repeat 0% 0%;	
 }
 
+.item-contact.email {
+    width: 190px !important;
+}
+
 .text-contact {
-    width: 450px;
+    width: 500px;
     height: auto;
     float: right;
     padding-right: 30px;
+    text-align: right;
 }
 
 .text-contact p {
@@ -445,9 +450,8 @@ img {
 
 .illu-contact {
     width: 130px;
-    float: left;
-    margin-left: 10px;
-    margin-right: 60px;
+    float: right;
+    margin: -20px 60px 0 71px;
 }
 
 .ie7 .item-contact {
