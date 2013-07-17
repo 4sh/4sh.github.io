@@ -454,6 +454,7 @@ img {
 
 .text-contact p {
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .illu-contact {
@@ -484,7 +485,7 @@ img {
 .job-contact {
 	display: block;
 	margin: 0 0;
-	font-size: 13px;	
+	font-size: 13px;
 	line-height: 17px;
 	vertical-align: top;
 }
@@ -493,4 +494,5 @@ img {
     font-style: italic;
     margin-left: -1px;
 	margin-bottom: 5px;
+    font-size: 11px;
 }
