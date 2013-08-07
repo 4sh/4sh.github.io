@@ -13,7 +13,7 @@
 
 .hoverable {
 	cursor: pointer;
-	display: block;	
+	display: block;
 }
 
 #discover-top {
@@ -324,11 +324,12 @@
 }
 
 .desc-text {
+    position: relative;
 	margin: 0 35px;
 	text-align: justify;
 }
 
-.desc-text img {
+.popup-content-scrollable img {
     margin: 0 auto;
     margin-top: 20px;
 }
