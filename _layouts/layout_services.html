@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/4sh_services.css">
+    <link rel="stylesheet" type="text/css" href="css/tiptip.css">
+</head>
+
+<body>
+<div id="container">
+    <div id="content">
+        {{ content }}
+        <hr />
+    </div>
+</div>
+</body>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<script type="text/javascript" src="../js/lib/jquery.tipTip.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".hoverable").fancybox({
+            'autoScale'			: true,
+            'transitionIn'		: 'fade',
+            'transitionOut'		: 'fade',
+            'overlayColor'		: '#f5f4f2',
+            'titleShow'			: false,
+            'onComplete' 		: function() { $('#fancybox-content .popup-content-scrollable').jScrollPane(); }
+        });
+    });
+
+    $(function(){
+        $(".tiptip").tipTip();
+    });
+
+</script>
+</html>

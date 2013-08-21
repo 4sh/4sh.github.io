@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/jqcloud.css" />
+    <link rel="stylesheet" type="text/css" href="../css/4sh_tags.css">
+</head>
+
+<body>
+<div id="container">
+    <div id="content">
+        {{ content }}
+        <hr />
+    </div>
+</div>
+</body>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+<script type="text/javascript" src="../js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../js/lib/jQueryRotate2.2.js"></script>
+<script type="text/javascript">
+    $(document).ready(
+            function () {
+                $(".popup").fancybox({
+                    'width'				: 850,
+                    'height'			: 550,
+                    'autoScale'			: true,
+                    'transitionIn'		: 'fade',
+                    'transitionOut'		: 'fade',
+                    'type'				: 'iframe',
+                    'overlayColor'		: '#f5f4f2',
+                    'titleShow'			: false
+                });
+
+            });
+
+    /*$(document).ready(function(){
+
+     $('.vertical').rotate(-90);
+
+     });*/
+
+</script>
+
