@@ -1,83 +1,9 @@
-<!DOCTYPE html [
-        <!ELEMENT html (head|body)*>
-<!ATTLIST html
-lang CDATA #REQUIRED>
-<!ELEMENT head (meta|link|title|script)*>
-<!ELEMENT meta (#PCDATA)>
-<!ATTLIST meta
-http-equiv CDATA #REQUIRED
-content CDATA #REQUIRED>
-<!ELEMENT link (#PCDATA)>
-<!ATTLIST link
-href CDATA #REQUIRED
-rel CDATA #REQUIRED
-type CDATA #REQUIRED>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT script (#PCDATA)>
-<!ATTLIST script
-src CDATA #IMPLIED
-type CDATA #IMPLIED>
-<!ELEMENT body (div)*>
-<!ELEMENT div (div|h1|p|a|hr|ul|img|h2)*>
-<!ATTLIST div
-class CDATA #IMPLIED
-id CDATA #IMPLIED>
-<!ELEMENT h1 (a)*>
-<!ATTLIST h1
-id CDATA #REQUIRED>
-<!ELEMENT a (span|img)*>
-<!ATTLIST a
-class CDATA #IMPLIED
-data-button CDATA #IMPLIED
-data-lang CDATA #IMPLIED
-data-link-color CDATA #IMPLIED
-data-show-count CDATA #IMPLIED
-data-text-color CDATA #IMPLIED
-data-width CDATA #IMPLIED
-href CDATA #REQUIRED
-id CDATA #IMPLIED
-title CDATA #IMPLIED>
-<!ELEMENT span (#PCDATA)>
-<!ATTLIST span
-class CDATA #IMPLIED
-id CDATA #IMPLIED>
-<!ELEMENT p (span)*>
-<!ATTLIST p
-class CDATA #IMPLIED
-id CDATA #IMPLIED>
-<!ELEMENT hr (#PCDATA)>
-<!ELEMENT ul (li)*>
-<!ATTLIST ul
-class CDATA #IMPLIED
-id CDATA #IMPLIED>
-<!ELEMENT li (a|p)*>
-<!ATTLIST li
-class CDATA #IMPLIED>
-<!ELEMENT img (#PCDATA)>
-<!ATTLIST img
-alt CDATA #IMPLIED
-border CDATA #IMPLIED
-height CDATA #IMPLIED
-id CDATA #IMPLIED
-src CDATA #REQUIRED
-style CDATA #IMPLIED
-title CDATA #IMPLIED
-width CDATA #IMPLIED>
-<!ELEMENT h2 (#PCDATA)>
-<!ATTLIST h2
-class CDATA #REQUIRED>
-<html lang="fr"> <!--<![endif]-->
+---
+layout: default
+title: Mentions Legales
+menu: accueil
+---
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <title>4SH Editeurs - Developpement - Services</title>
-    <link rel="stylesheet" type="text/css" href="css/4sh_create_bloc.css">
-    <link rel="stylesheet" type="text/css" href="css/4sh_style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/4sh_text_layout.css">
-</head>
-
-<body>
 <div id="container">
     <div id="header">
         <div id="h-left">
@@ -160,5 +86,4 @@ class CDATA #REQUIRED>
         <hr />
     </div>
 </div>
-</body>
-</html>
+
