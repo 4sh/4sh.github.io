@@ -46,3 +46,19 @@ menu: accueil
     </div>
     <div class="small-bottom">&nbsp;</div>
 </div>
+
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../js/lib/slides.min.jquery.js"></script>
+<script>
+    $(function(){
+        $('#slides').slides({
+            preload: true,
+            preloadImage: 'img/loading_slideshow.gif',
+            play: 7000,
+            pause: 10000,
+            effect: 'fade',
+            hoverPause: true
+        });
+    });
+</script>
