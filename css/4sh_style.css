@@ -316,6 +316,18 @@ img {
 	margin: 5px 0 0 15px;
 }
 
+#f-left p {
+    float: right;
+}
+
+.small-logo-company {
+    float: left;
+    height: 6px;
+    width: 20px;
+    background: url("../img/small_logo_4sh.png") no-repeat;
+    margin: 12px 7px 0 0;
+}
+
 #footer #f-right {
 	float: right;
 	margin: 5px 15px 0 0;
@@ -348,9 +360,11 @@ img {
 #f-nav .f-nav-item a {
 	color: #666666;	
 	text-decoration: none;
+    transition: 400ms;
 }
 
 #f-nav .f-nav-item a:hover {
+    transition: 250ms;
 	color: #ED1C24;
 	text-decoration: none;
 }
