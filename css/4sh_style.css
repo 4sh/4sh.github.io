@@ -182,15 +182,10 @@ img {
 
 #nav .nav-item:hover a {
     transition: 400ms;
-    background: #ebebeb;
 	text-decoration: none;
 	color: #ED1C24;
     border-bottom: 2px #666666 solid;
     border-radius: 3px;
-}
-
-#nav .nav-item:active a {
-    border-bottom: 1px #666666 solid;
 }
 
 #nav .nav-item.accueil { width: 70px;}
