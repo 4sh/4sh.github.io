@@ -185,6 +185,7 @@ img {
 	text-decoration: none;
 	color: #ED1C24;
     border-bottom: 2px #666666 solid;
+    border-radius: 3px;
 }
 
 #nav .nav-item.accueil { width: 70px;}
@@ -383,15 +384,30 @@ img {
 
 .back-button {
 	display: block;
-	width: 87px;
-	height: 22px;
+	width: 95px;
+	height: 25px;
+    padding-bottom: 5px;
 	margin: 10px auto 0;
 	color: #ffffff !important;
 	font-size: 16px;
 	text-decoration: none;
 	text-align: center;
-	background: url(../img/button_retour.png) no-repeat;
+	background: url("../img/button_retour.png") no-repeat;
     padding-top: 3px;
+    transition: 250ms;
+}
+
+.back-button:hover {
+    transition: 250ms;
+    background: url("../img/button_retour_hover.png") no-repeat;
+}
+
+.back-icon {
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin: 2px 0 0 10px;
+    background: url("../img/back-icon.png") no-repeat;
 }
 
 .ie9 .back-button {
