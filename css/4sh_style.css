@@ -184,8 +184,6 @@ img {
     transition: 400ms;
 	text-decoration: none;
 	color: #ED1C24;
-    border-bottom: 2px #666666 solid;
-    border-radius: 3px;
 }
 
 #nav .nav-item.accueil { width: 70px;}
