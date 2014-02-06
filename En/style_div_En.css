@@ -1,0 +1,56 @@
+﻿@charset "utf-8";
+/* CSS Document */
+div#bandeau {				margin-left: auto;	margin-right: auto;						width:955px;	height:133px;	background-color:#FFFFFF;}
+div#illustrationcentrale {	margin-left: auto;	margin-right: auto;						width:955px;	height:225px;	background-image: url(images/illustrationCentrale.jpg);}
+div#contenu {				margin-left: auto;	margin-right: auto;						width:955px;	height:985px;	background-color:#f5f4f2;}
+div#bandeau4SH {			float:left;		width:650px;	height:83px;	background-image: url(images/barre4SH.jpg);}
+div#bandeauLangues {		float:left;		width:149px;	height:83px;	background-color:#FFFFFF;}
+div#bandeauSyntys {			float:left;		width:156px;	height:83px;	background-image: url(images/barreSYNTYS.jpg);}
+div#bandeauMenu {			float:left;		width:955px;	height:50px;	background-image: url(images/barreMenu.jpg);}
+div#bprincipal{				float:left;		margin-top: 20px;	margin-left: 13px;		width:510px;	height:895px;	background-color:#FFFFFF;}
+div#bprincipal2{			float:left;		margin-top: 20px;	margin-left: 5px;		width:415px;	height:260px;	background-color:#FFFFFF;}
+div#bprincipal3{			float:left;		margin-top: 15px;	margin-left: 5px;		width:415px;	height:205px;	background-color:#FFFFFF;}
+div#bprincipal4{			float:left;		margin-top: 15px;	margin-left: 5px;		width:415px;	height:400px;	background-color:#FFFFFF;}
+div#bprincipal7{			float:left;		margin-top: 19px;	margin-left: 13px;		width:930px;	height:40px;	background-color:#f5f4f2;}
+div#bcentre{				float:left;		width:500px;}
+div#bcentre2{				float:left;		width:275px;}
+div#bcentre4{				float:left;		width:405px;}
+div#bcentre7{				float:left;		width:930px;}
+div#billustradroit{			float:left;		width:130px;	height:155px;	background-image: url(images/illustrationDefis.jpg);}
+div#billustradroit2{		float:left;		width:130px;	height:190px;	background-image: url(images/illustrationNewsA.jpg);}
+div#bgauche{				float:left;		width:5px;		height:895px;	background-image: url(images/bgauche.jpg);}
+div#bgauche2{				float:left;		width:5px;		height:260px;	background-image: url(images/bgauche.jpg);}
+div#bgauche3{				float:left;		width:5px;		height:205px;	background-image: url(images/bgauche.jpg);}
+div#bgauche4{				float:left;		width:5px;		height:400px;	background-image: url(images/bgauche.jpg);}
+div#bdroite{				float:left;		width:5px;		height:895px;	background-image: url(images/bdroit.jpg);}
+div#bdroite2{				float:left;		width:5px;		height:260px;	background-image: url(images/bdroit.jpg);}
+div#bdroite3{				float:left;		width:5px;		height:205px;	background-image: url(images/bdroit.jpg);}
+div#bdroite4{				float:left;		width:5px;		height:400px;	background-image: url(images/bdroit.jpg);}
+div#bhaut{					margin-top: 0px;				height:100%;	background-color:#FFFFFF;}
+div#bbasgauche{				float:left;		width:5px;		height:9px;		background-image: url(images/bgauchebas.jpg);}
+div#bbascentre{				width:100%;		height:9px;						background-image: url(images/bbas.jpg);}
+div#bbasdroit{				float:Right;	width:5px;		height:9px;		background-image: url(images/bdroitbas.jpg);}
+div#btitreImage{			float:left; margin-left:25px;width:93px;	height:53px;	background-image: url(images/titre4SHa.jpg);}
+.texto1 {
+	font-family: "Lucida Sans Unicode","Lucida Grande", sans-serif;
+	font-size: 13px;
+	line-height: 1.5em;
+	color: #666;
+	padding: 10px 25px 0px 25px;
+	text-align: justify;
+}
+.texto2 {					font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;	font-size: 11px;	line-height: 1.7em;	color: #666;	padding: 0px 20px 0px 25px;}
+.texto3 {					font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;	margin-right: -15px; margin-top: 0px; margin-bottom: 0px; font-size: 10px;	line-height: 1.7em;	color: #666;	padding: 0px 20px 0px 0px;}
+.texto4 {					font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;	font-size: 10px;	line-height: 1.7em;	color: #777;	padding: 0px 20px 0px 25px;}
+.titre2 {					font-family: Arial, Helvetica, sans-serif;	margin-bottom: -6px;	font-size: 20px;	font-weight: bold;	color: #444;	padding: 5px 0px 0px 25px;}
+.titre {					font-family: Arial, Helvetica, sans-serif;							font-size: 16px;	font-weight: bold;	color: #444;	padding: 10px 25px 0px;}
+.listeA {				    font-family: "Lucida Sans Unicode","Lucida Grande", sans-serif;		font-size: 13px;	line-height: 1.5em;	color: #666;	padding: 0px 25px 0px;								
+							list-style-image: url("images/puce.gif");   list-style-position: outside;	margin-left:13px;	margin-top: -6px;	margin-bottom: -6px;}
+.listeB {				   	font-family: "Lucida Sans Unicode","Lucida Grande", sans-serif;		font-size: 11px;	line-height: 1.7em;	color: #666;	padding: 0px 10px 0px 25px;
+							list-style-image: url("images/puce.gif");   list-style-position: outside;	margin-left:13px;	margin-top: -6px;	margin-bottom: -6px;}
+a.lien1 {					font-family: "Lucida Sans Unicode","Lucida Grande", sans-serif; 	font-size: 11px;						color:#fe0000;	padding: 0px 0px 0px 25px;} 
+a.lien2 {					font-family: "Lucida Sans Unicode","Lucida Grande", sans-serif; 	font-size: 10px;						color:#777;	padding: 0px 0px 0px 0px;}
+
+
+	
+
