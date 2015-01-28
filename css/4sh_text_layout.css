@@ -21,3 +21,13 @@
 .red-text {
 	color: #eb272d;	
 }
+
+
+/* Text alignment */
+
+.text-center { text-align: center;}
+.text-left { text-align: left;}
+.text-right { text-align: right;}
+
+.f-right { float: right;}
+.f-left { float: left;}

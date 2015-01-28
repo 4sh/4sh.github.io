@@ -192,6 +192,9 @@ img {
 #nav .nav-item.services { width: 70px;}
 #nav .nav-item.services.active { background: url('../img/button_services.png') no-repeat; }
 
+#nav .nav-item.challenges { width: 127px;}
+#nav .nav-item.challenges.active { background: url('../img/button_challenges.png') no-repeat; }
+
 #nav .nav-item.savoir-faire { width: 98px;}
 #nav .nav-item.savoir-faire.active { background: url('../img/button_savoir_faire.png') no-repeat; }
 
@@ -203,7 +206,8 @@ img {
 
 #nav .nav-item.accueil.active a, 
 #nav .nav-item.services.active a,
-#nav .nav-item.savoir-faire.active a, 
+#nav .nav-item.challenges.active a,
+#nav .nav-item.savoir-faire.active a,
 #nav .nav-item.references.active a, 
 #nav .nav-item.contact.active a { color: #FFFFFF;  border: none;}
 

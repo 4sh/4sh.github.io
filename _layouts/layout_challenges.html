@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/4sh_challenges.css">
+    <link rel="stylesheet" type="text/css" href="../css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="../css/tiptip.css">
+</head>
+
+<body>
+<div id="container">
+    <div class="title-block title-bg-right challenges">
+        <h1>Vos challenges</h1>
+    </div>
+    <div class="menu-challenges">
+        <ul class="list-challenges">
+            <li class="text-center "><a href="../challenges_technologiques.html"><span class="icon-menu icon-technos {% if page.menu == 'technologiques' %}icon-technos-hover{% endif %} technologique"></span><span class="label-menu">Technologiques</span></a></li>
+            <li><span class="list-challenges-separator"></span></li>
+            <li class="text-center"><a href="../challenges_produit.html"><span class="icon-menu icon-product {% if page.menu == 'produit' %}icon-product-hover{% endif %} produit"></span><span class="label-menu">Produit</span></a></li>
+            <li><span class="list-challenges-separator"></span></li>
+            <li class="text-center"><a href="../challenges_organisation.html"><span class="icon-menu icon-orga {% if page.menu == 'organisation' %}icon-orga-hover{% endif %} organisation"></span><span class="label-menu">Organisation &</br>ressources</span></a></li>
+            <li><span class="list-challenges-separator"></span></li>
+            <li class="text-center"><a href="../challenges_strategiques.html"><span class="icon-menu icon-strat {% if page.menu == 'strategique' %}icon-strat-hover{% endif %} strategique"></span><span class="label-menu">Stratégiques</span></a></li>
+            <li><span class="list-challenges-separator"></span></li>
+            <li class="text-center"><a href="../challenges_commerce.html"><span class="icon-menu icon-commerce {% if page.menu == 'commerce' %}icon-commerce-hover{% endif %} commerce"></span><span class="label-menu">Commerciaux</span></a></li>
+        </ul>
+    </div>
+    <div class="title-block title-bg-left">
+        <h1 class="f-right red-text"><span class="icon-prob"></span>Vos problématiques</h1>
+    </div>
+
+    <div id="content">
+        {{ content }}
+    </div>
+</div>
+</body>
+</html>
