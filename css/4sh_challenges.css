@@ -13,6 +13,57 @@
     color: #494849;
 }
 
+.icon-question {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 21px;
+    width: 21px;
+    background: url('../img/icon-question.png') no-repeat;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.icon-question:hover {
+    transition: 300ms;
+    background: url('../img/icon-question-hover.png') no-repeat;
+}
+
+.step-numb {
+    background: #bababa;
+    font-weight: bold;
+    height: 15px;
+    max-width: 150px;
+    display: block;
+    margin: 35px auto 5px;
+    padding: 12px 16px;
+    color: white;
+    border-radius: 110px;
+}
+
+.step-numb:first-child {
+    margin-top: 0;
+}
+
+.info-prolematic {
+    background: #dddddd;
+    margin: 0 30px 30px 30px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.illu-chall {
+    display: block;
+    height: 85px;
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.step1 { background: url('../img/step1.gif') no-repeat;     background-position: top center;    background-size: 60%;}
+.step2 { height: 130px; background: url('../img/step2.gif') no-repeat;    background-position: top center;   background-size: 60%;}
+
+
 /* Define bg img */
 .challenges { background: url('../img/background-challenges.png') no-repeat;}
 
@@ -182,3 +233,24 @@
 /* Commerciaux */
 .icon-more { background: url('../img/icon-labels-prob/icon-more.png') no-repeat;}
 .icon-change { background: url('../img/icon-labels-prob/icon-change.png') no-repeat;}
+
+/* Form */
+
+.popup-content {
+    margin: 0 !important;
+}
+
+.form-mail label {
+    margin: 10px 0;
+}
+
+label input {
+    height: 19px;
+}
+
+.label-form {
+    padding: 5px 10px;
+    background: #494849;
+    font-size: 12px;
+    color: white;
+}
