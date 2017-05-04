@@ -14,7 +14,7 @@ $(function() {
         },
         {
             name : 'Naxos/C21',
-            pictureName : 'naxos_c21.png'
+            pictureName : 'naxos_C21.png'
         },
         {
             name : 'Infoport',
