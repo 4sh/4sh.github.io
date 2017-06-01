@@ -3,7 +3,7 @@ var baseUrl = 'https://mailservice.4sh.fr';
 var config = {
     withCredentials: false,
     headers: {
-        'Authorization': 'Basic ' + btoa('test:207769c7aa31aa7568a3c5f16d890a7a'),
+        'Authorization': 'Basic ' + btoa('4shWebsite:67c8e0fb94054c4b09831d55e45eb02e'),
         'Content-Type' : 'application/x-www-form-urlencoded'
     },
     subject : '[4SH - Website] Nouvelle demande de contact'
