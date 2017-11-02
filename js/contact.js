@@ -5,8 +5,7 @@ var config = {
     headers: {
         'Authorization': 'Basic ' + btoa('4shWebsite:67c8e0fb94054c4b09831d55e45eb02e'),
         'Content-Type' : 'application/x-www-form-urlencoded'
-    },
-    subject : '[4SH - Website] Nouvelle demande de contact'
+    }
 };
 
 $('#contactForm').submit(function (event) {
@@ -18,11 +17,13 @@ $('#contactForm').submit(function (event) {
         + 'Raison de la demande : ' + $('#reason').val() + '.\n \n'
         + 'Message : \n' + $('#message').val();
 
+    var subject = '[4SH - Website] '+ $('#reason').val() +' - ' + $('#firstName').val() + ' ' + $('#lastname').val();
+
     $.ajax({
         url : baseUrl + '/api/messages',
         method: 'POST',
         data: JSON.stringify({
-            subject: config.subject,
+            subject: subject,
             body: body
         }),
         headers: config.headers,
