@@ -3,6 +3,8 @@
 //@prepros-append lib/cbp-scroller/classie.js
 //@prepros-append lib/cbp-scroller/cbpScroller.js
 //@prepros-append lib/alertifyjs/alertify.min.js
+//@prepros-append lib/progressive-image.js
 //@prepros-append menu-recruitment.js
 //@prepros-append smooth-scrool.js
+//@prepros-append contact.js
 //@prepros-append contact.js
