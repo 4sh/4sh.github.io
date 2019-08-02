@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="314" viewBox="0 0 1440 314">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.668" cy="0.837" r="0.961" gradientTransform="matrix(0.15, -0.727, 0.205, 0.889, 0.396, 0.578)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ea2631"/>
+      <stop offset="1" stop-color="#ed3d47"/>
+    </radialGradient>
+  </defs>
+  <g id="Groupe_756" data-name="Groupe 756" transform="translate(4524 -539.486)">
+    <path id="Union_15" data-name="Union 15" d="M6.7,311.025l-6.284.062,6.284-.062C54.056,290.559,347.838,170.8,737.631,170.8c5.541,0,12.644.052,17.994,0,416.992-4.033,686.4-159.2,684.191-162.883,0-65.01.184,291.69.184,291.69L0,313.982S2.271,312.937,6.7,311.025Z" transform="translate(-4524 539.486)" fill="url(#radial-gradient)"/>
+    <path id="Tracé_693" data-name="Tracé 693" d="M0,789.456S311.419,670.829,737.631,670.829s704.423-146.612,702.184-150.049c0-59.888.185,268.706.185,268.706L0,789.456Z" transform="translate(-4524 64)" fill="#ea2631"/>
+  </g>
+</svg>
