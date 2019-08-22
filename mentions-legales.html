@@ -280,9 +280,11 @@
 <script src="assets/js/app.js"></script>
 <script>
     var sidebar = new StickySidebar('.sidebar', {
-        bottomSpacing: 20,
+        bottomSpacing: 90,
         topSpacing: 90,
-        innerWrapperSelector: '.sidebar__inner'
+        containerSelector: '#containerSidebar',
+        resizeSensor: true,
+        innerWrapperSelector: '.sidebar__inner',
     });
 </script>
 <script>
