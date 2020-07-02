@@ -180,34 +180,9 @@
         
         <!-- START Section Offres Intro 4SH -->
         <div id="sectionStageIntro" class="grid-y align-center section _first-section">
-            <div class="section-container">
-                <div class="grid-x align-middle grid-padding-x">
-                    <div class="cell small-24  large-14 xlarge-12">
-                        <h1 class="txt-primary">Découvre nos offres d'emploi<br></h1>
-                        <p>Prendre part à des projets sur des technos sympas (Java / Kotlin / Angular / TypeScript / JS ...) au sein d'une équipe de passionnés ça te tente ?<br><br>
-                            Si c'est sur des projets qui ont du sens c'est encore mieux (leader européen de la gestion de charge pour véhicule électrique / gestion du fret maritime et aérien de La Réunion / applications mobiles pour les conseillers d'un leader de l'immobilier ...) ? <br><br>
-                            Voilà ce que nous proposons depuis plus de 10 ans chez 4SH, et ça marche ! Tellement bien que nous recrutons régulièrement des développeurs et développeuses Junior Full Stack passionnés, comme nous :)<br><br></p>
-                            <div class="grid-x">
-                            <div class="cell small-12 medium-auto">
-                                <label>Type de contrat</label>
-                                <span class="title-large txt-primary">CDI</span>
-                            </div>
-        
-                            <div class="cell small-12 medium-auto">
-                                <label>Lieux de travail</label>
-                                <span class="title-large txt-primary">Le Haillan</span>
-                            </div>
-        
-                            <div class="cell small-24 medium-auto">
-                                <label>Au sein d’une équipe de</label>
-                                <span class="title-large txt-primary">50 <small class="subInfo">passionné(e)s</small></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell auto text-center">
-                        <img src="assets/img/png/illu-stages.png" alt="Illustration Stages" width="460">
-                    </div>
-                </div>
+            <div class="cell shrink section-container">
+                <br><br><br>
+                <h1 class="txt-primary">Découvre nos offres d'emploi<br></h1>
             </div>
         </div>
         <!-- END Section Offres Intro 4SH-->
@@ -215,113 +190,331 @@
         <!-- START Section Offres List 4SH -->
         <div id="sectionStagesList" class="grid-y align-center section">
             <div class="section-container _spaced">
-                <ul class="accordion" data-accordion>
+                <ul class="accordion" id="tabs-container" data-accordion data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500">
                     <li class="accordion-item offerItem is-active" data-accordion-item>
                         <!-- Accordion tab title -->
-                        <a href="#" class="accordion-title">
+                        <a href="#offre-developpeur" class="accordion-title">
                             <span class="offerItem-post-title">Ingénieur Développeur Full Stack Junior H/F</span>
                         </a>
         
                         <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-                        <div class="accordion-content" data-tab-content>
-                            <div class="grid-x">
-                                <div class="cell small-24 large-12">
-                                    <span class="title-medium font-bold">Environnement technologique<br></span>
-                                    <ul class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-2 large-up-3 xlarge-4 skillsList">
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/java-color.png" title="JAVA">
-                                            <span class="title small">Java 11 </span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/kotlin-color.png" title="Kotlin">
-                                            <span class="title small">Kotlin</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/kubernetes-color.png" title="Kubernetes">
-                                            <span class="title small">Kubernetes</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/sass-color.png" title="Sass">
-                                            <span class="title small">Sass</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/ionic-color.png" title="Ionic">
-                                            <span class="title small">Ionic</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/cordova-color.png" title="Cordova">
-                                            <span class="title small">Cordova</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/gradle-color.png" title="Gradle">
-                                            <span class="title small">Gradle</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/maven-color.png" title="Maven">
-                                            <span class="title small">Maven</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/mongoDb-color.png" title="MongoDB">
-                                            <span class="title small">Mongo</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/tscript-color.png" title="TypeScript">
-                                            <span class="title small">TypeScript</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/angular-color.png" title="Angular">
-                                            <span class="title small">Angular</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/docker-color.png" title="Docker">
-                                            <span class="title small">Docker</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/idea-color.png" title="Intellij">
-                                            <span class="title small">Intellij</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/git-color.png" title="Git">
-                                            <span class="title small">Git</span>
-                                        </li>
-                                        <li class="cell skillsList-item">
-                                            <img src="assets/img/png/logos-technos/version-color/graphql-color.png" title="GraphQl">
-                                            <span class="title small">GraphQl</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="cell small-1 hide-for-small"></div>
-                                <div class="cell small-24 large-11">
-                                    <span class="title-medium font-bold">Les responsabilités<br></span>
-                                    <br>
-                                    <br>
-                                    <ul>
-                                        <li>Participer à la conception technique des solutions</li>
-                                        <li>Développer les solutions et les tests automatisés associés</li>
-                                        <li>Collaborer avec une équipe pluri disciplinaire (consultant.e.s UX, web designer, pilote de projet, ingenieur ops, ...) <a class="txt-primary font-bold" href="/metiers.html">Découvrir nos métiers</a></li>
-                                    </ul>
-                                    <br>
-                                    <br>
-                                    <ul class="grid-x small-up-1 stageList">
-                                        <li class="cell stageCard _contact">
-                                            <img src="assets/img/png/team-group.png"  data-parallax='{"scale":"1"}'>
-                                            <div class="card _white">
-                                                <div class="grid-x align-middle">
-                                                    <div class="cell auto card-section text-center">
-                                                        <div class="grid-x">
-                                                            <div class="cell auto">
-                                                                <span class="title-medium txt-white font-bold">Tu es intéressé ?</span>
-                                                                <br>
-                                                                <a href="contact.html?from=stages" class="button white has-icon-right">
-                                                                    Contacte-nous <i class="fa fa-chevron-right"></i>
-                                                                </a>
+                        <div class="accordion-content" id="offre-developpeur" data-tab-content>
+                            <div class="grid-y grid-margin-y">
+                                <div class="cell shrink grid-x">
+                                    <div class="cell small-24 large-12">
+                                        <p>Prendre part à des projets sur des technos sympas (Java /
+                                            Kotlin / Angular /
+                                            TypeScript /
+                                            JS …) au
+                                            sein d'une équipe de passionnés ça te tente ?<br><br>
+                                            Si c'est sur des projets qui ont du sens c'est encore mieux (leader européen de la
+                                            gestion de charge
+                                            pour véhicule électrique / gestion du fret maritime et aérien de La Réunion /
+                                            applications mobiles
+                                            pour les conseillers d'un leader de l'immobilier …) ? <br><br>
+                                            Voilà ce que nous proposons depuis plus de 10 ans chez 4SH, et ça marche ! Tellement
+                                            bien que nous
+                                            recrutons régulièrement des développeurs et développeuses Junior Full Stack
+                                            passionnés,
+                                            comme nous
+                                            :)
+                                        </p>
+                                        <br><br><br>
+                                        <span class="title-medium font-bold">Environnement technologique<br></span>
+                                        <ul class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-2 large-up-3 xlarge-4 skillsList">
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/java-color.png"
+                                                     title="JAVA">
+                                                <span class="title small">Java 11 </span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/kotlin-color.png"
+                                                     title="Kotlin">
+                                                <span class="title small">Kotlin</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/kubernetes-color.png"
+                                                     title="Kubernetes">
+                                                <span class="title small">Kubernetes</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/sass-color.png"
+                                                     title="Sass">
+                                                <span class="title small">Sass</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/ionic-color.png"
+                                                     title="Ionic">
+                                                <span class="title small">Ionic</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/cordova-color.png"
+                                                     title="Cordova">
+                                                <span class="title small">Cordova</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/gradle-color.png"
+                                                     title="Gradle">
+                                                <span class="title small">Gradle</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/maven-color.png"
+                                                     title="Maven">
+                                                <span class="title small">Maven</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/mongoDb-color.png"
+                                                     title="MongoDB">
+                                                <span class="title small">Mongo</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/tscript-color.png"
+                                                     title="TypeScript">
+                                                <span class="title small">TypeScript</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/angular-color.png"
+                                                     title="Angular">
+                                                <span class="title small">Angular</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/docker-color.png"
+                                                     title="Docker">
+                                                <span class="title small">Docker</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/idea-color.png"
+                                                     title="Intellij">
+                                                <span class="title small">Intellij</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/git-color.png" title="Git">
+                                                <span class="title small">Git</span>
+                                            </li>
+                                            <li class="cell skillsList-item">
+                                                <img src="assets/img/png/logos-technos/version-color/graphql-color.png"
+                                                     title="GraphQl">
+                                                <span class="title small">GraphQl</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cell small-1 hide-for-small"></div>
+                                    <div class="cell small-24 large-11">
+                                        <div class="grid-x align-center">
+                                            <img class="cell shrink" src="assets/img/png/illu-develop.png"
+                                                 alt="Illustration Développeur" width="400">
+                                        </div>
+                                        <div class="grid-x align-spaced grid-margin-x">
+                                            <div class="cell shrink">
+                                                <label>Type de contrat</label>
+                                                <span class="title-large txt-primary">CDI</span>
+                                            </div>
+        
+                                            <div class="cell shrink">
+                                                <label>Lieux de travail</label>
+                                                <span class="title-large txt-primary">Le Haillan</span>
+                                            </div>
+        
+                                            <div class="cell shrink">
+                                                <label>Au sein d’une équipe de</label>
+                                                <span class="title-large txt-primary">50 <small
+                                                        class="subInfo">passionné(e)s</small></span>
+                                            </div>
+                                        </div>
+                                        <br><br><br>
+                                        <span class="title-medium font-bold">Les responsabilités<br></span>
+                                        <br>
+                                        <br>
+                                        <ul>
+                                            <li>Participer à la conception technique des solutions</li>
+                                            <li>Développer les solutions et les tests automatisés associés</li>
+                                            <li>Collaborer avec une équipe pluri disciplinaire (consultant.e.s UX, web designer,
+                                                pilote de projet, ingenieur ops, …) <a class="txt-primary font-bold"
+                                                                                         href="/metiers.html">Découvrir nos
+                                                    métiers</a></li>
+                                        </ul>
+                                        <br>
+                                        <br>
+        
+                                        <ul class="grid-x small-up-1 stageList">
+                                            <li class="cell stageCard _contact">
+                                                <img src="assets/img/png/team-group.png"  data-parallax='{"scale":"1"}'>
+                                                <div class="card _white">
+                                                    <div class="grid-x align-middle">
+                                                        <div class="cell auto card-section text-center">
+                                                            <div class="grid-x">
+                                                                <div class="cell auto">
+                                                                    <span class="title-medium txt-white font-bold">Tu es intéressé ?</span>
+                                                                    <br>
+                                                                    <a href="contact.html?from=recrutement" class="button white has-icon-right">
+                                                                        Contacte-nous <i class="fa fa-chevron-right"></i>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion-item offerItem" data-accordion-item>
+                        <!-- Accordion tab title -->
+                        <a href="#offre-consultant-fonctionnel" class="accordion-title">
+                            <span class="offerItem-post-title">Consultant fonctionnel H/F</span>
+                        </a>
+        
+                        <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                        <div class="accordion-content" id="offre-consultant-fonctionnel" data-tab-content>
+                            <div class="grid-y grid-margin-y">
+                                <div class="cell shrink grid-x">
+                                    <div class="cell small-24 large-12">
+                                        <p>Vous êtes passionné par le Web, les applications
+                                            mobiles et les nouvelles technologies ! Vous avez un esprit critique, créatif et
+                                            développez
+                                            des idées ergonomiques et adaptées !<br><br>
+        
+                                            Vous allez au-devant des exigences clients dans le respect des contraintes projets
+                                            et
+                                            des normes d'expérience utilisateur !<br><br>
+        
+                                            Rejoignez les équipes 4SH en tant que Consultant Fonctionnel.<br><br>
+        
+                                            Depuis plus de 10 ans, 4SH accompagne ses clients dans la digitalisation de leur
+                                            métier.
+                                            Nous organisons, en collaboration avec eux, le design, le développement et la mise
+                                            en
+                                            production d'applications Web et mobiles répondant à leur besoins métiers.
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <span class="title-medium font-bold">Description du poste<br></span>
+                                        <br>
+                                        <p>Basé dans nos locaux du Haillan (rocade sortie 9) , vos principales missions seront
+                                            :</p>
+                                        <ul>
+                                            <li>d’<b>écouter</b> nos clients et de <b>recueillir et analyser</b> leurs besoins (processus
+                                                métier, contraintes opérationnelles / règlementaires, …)
+                                            </li>
+                                            <li>de <b>rédiger</b> des spécifications fonctionnelles selon la méthode 4SH.</li>
+                                            <li>de travailler main dans la main avec l’équipe technique pour assurer <b>la
+                                                pertinence</b> et <b>la qualité</b> de la solution développée
+                                            </li>
+                                            <li>et de suivre les produits tout au long de leur <b>cycle de vie</b> : de la conception à
+                                                la mise en production ainsi que pendant son exploitation.
+                                            </li>
+                                        </ul>
+                                        <br><br>
+                                        <span class="title-small txt-primary font-bold">Interface client</span>
+                                        <p>En relation avec le client :</p>
+                                        <ul>
+                                            <li>vous effecturez des <b>observations terrains</b>, des <b>audits ergonomiques</b>, …</li>
+                                            <li>vous animerez des <b>ateliers fonctionnels</b>, des tests utilisateurs, …</li>
+                                            <li>vous organiserez des présentations au fil du développement et participerez aux
+                                                <b>arbitrages</b> projet et discuterez des <b>priorités</b>.
+                                            </li>
+                                            <li>et vous qualifierez les retours utilisateurs en phase de <b>recette</b> ainsi qu’au
+                                                sein du projet de <b>maintenance</b> du produit (après lancement).
+                                            </li>
+                                        </ul>
+                                        <br><br>
+                                        <span class="title-small txt-primary font-bold">Au sein de l’équipe interne 4SH</span>
+                                        <ul>
+                                            <li>Vous intégrez une équipe pluridisciplinaire constituée de Web
+                                                designer/intégrateurs, développeurs, pilotes projet tous au service de la
+                                                satisfaction client. En tant que référent métier sur vos projets, vous assurerez
+                                                la <b>transmission</b> des informations fonctionnelles en provenance du client.
+                                            </li>
+        
+                                            <li>Vous établirez, conjointement avec les responsables projets, le planning et
+                                                contenu des livraisons.
+                                            </li>
+        
+                                            <li>Vous contrôlerez la qualité et l’adéquation fonctionnelle de l’application
+                                                produite.
+                                            </li>
+        
+                                            <li>Vous participerez à l'amélioration continue des <b>outillages internes</b>, support de
+                                                votre fonction : <b>Confluence, JIRA, Balsamiq</b>, …
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cell small-1 hide-for-small"></div>
+                                    <div class="cell small-24 large-11">
+                                        <div class="grid-x align-center">
+                                            <img class="cell shrink" src="assets/img/png/illu-discover.png"
+                                                 alt="Illustration Consultant Fonctionnel" width="400">
+                                        </div>
+                                        <div class="grid-x align-spaced grid-margin-x">
+                                            <div class="cell shrink">
+                                                <label>Type de contrat</label>
+                                                <span class="title-large txt-primary">CDI</span>
                                             </div>
-                                        </li>
-                                    </ul>
+        
+                                            <div class="cell shrink">
+                                                <label>Lieux de travail</label>
+                                                <span class="title-large txt-primary">Le Haillan</span>
+                                            </div>
+        
+                                            <div class="cell shrink">
+                                                <label>Au sein d’une équipe de</label>
+                                                <span class="title-large txt-primary">50 <small
+                                                        class="subInfo">passionné(e)s</small></span>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <span class="title-medium font-bold">Profil recherché<br></span>
+                                        <br>
+                                        <p>Formation Bac +5 sortie d'école ou avec une courte expérience professionnelle en tant
+                                            que consultant fonctionnel ou de Product Owner d’application Web et/ou
+                                            mobiles.<br><br>
+        
+                                            Une formation ou une expérience dans le développement informatique constituera un
+                                            plus pour ce poste.</p>
+                                        <br>
+                                        <br>
+                                        <span class="title-small txt-primary font-bold">Vos atouts pour réussir dans ce poste</span>
+                                        <ul>
+                                            <li>Excellentes capacités d'<b>adaptation</b> pour faire face à la diversité des métiers de
+                                                nos clients.
+                                            </li>
+                                            <li>Forte capacité d’<b>analyse</b> et de <b>modélisation</b> pour traduire le besoin métier en
+                                                exigences produit.
+                                            </li>
+                                            <li>Bonnes compétences <b>rédactionnelles</b> et <b>relationnelles</b>, pour assurer une
+                                                transmission efficace de l’information et une bonne relation client.
+                                            </li>
+                                            <li><b>Rigueur</b>, sens de l’<b>organisation</b> et esprit d’<b>initiative</b> sont indispensables pour
+                                                gérer la multiplicité métiers et produits.
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <br>
+        
+                                        <ul class="grid-x small-up-1 stageList">
+                                            <li class="cell stageCard _contact">
+                                                <img src="assets/img/png/team-group.png"  data-parallax='{"scale":"1"}'>
+                                                <div class="card _white">
+                                                    <div class="grid-x align-middle">
+                                                        <div class="cell auto card-section text-center">
+                                                            <div class="grid-x">
+                                                                <div class="cell auto">
+                                                                    <span class="title-medium txt-white font-bold">Tu es intéressé ?</span>
+                                                                    <br>
+                                                                    <a href="contact.html?from=recrutement" class="button white has-icon-right">
+                                                                        Contacte-nous <i class="fa fa-chevron-right"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
