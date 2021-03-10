@@ -38,7 +38,7 @@
         <header class="cell shrink grid-x align-middle cd-morph-dropdown" id="header">
             <div class="cell auto headerSpacer hide-for-small-only"></div>
 
-            <div class="cell xlarge-21 grid-x align-middle headerContent">
+            <div class="cell grid-x align-middle headerContent">
                 <!-- Header Logo --->
                 <div class="cell shrink">
                     <a href="./#sectionIntro" class="menu-item smooth-link isLogo">
@@ -243,6 +243,20 @@
                     <div class="cell small-24 medium-12">
                         <form class="form grid-x" id="contactForm">
                             <label class="cell small-24">
+                                Sujet <small>(Obligatoire)</small>
+                                <select id="reason" required="required">
+                                    <option value="" selected>Sélectionner un sujet</option>
+                                    <option value="Informations">Demande d'informations</option>
+                                    <option value="DiagnosticUX">Diagnostic UX offert</option>
+                                    <option value="Performance">Évaluer la performance de votre hébergement actuel</option>
+                                    <option value="Compatibilite">Évaluer la compatibilité de votre solution</option>
+                                    <option value="Recrutement">Recrutement</option>
+                                    <option value="Stage">Stage</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </label>
+        
+                            <label class="cell small-24">
                                 Nom
                                 <input type="text" id="lastname">
                             </label>
@@ -268,17 +282,6 @@
                             </label>
         
                             <label class="cell small-24">
-                                Sujet <small>(Obligatoire)</small>
-                                <select id="reason" required="required">
-                                    <option value="" selected>Sélectionner un sujet</option>
-                                    <option value="Informations">Demande d'informations</option>
-                                    <option value="Recrutement">Recrutement</option>
-                                    <option value="Stage">Stage</option>
-                                    <option value="Autre">Autre</option>
-                                </select>
-                            </label>
-        
-                            <label class="cell small-24">
                                 Message <span class="form-mandatoryInfo">(Obligatoire)</span>
                                 <textarea rows="8" id="message" required="required"></textarea>
                             </label>
@@ -297,6 +300,7 @@
                 </div>
             </div>
         </div>
+        
 
         <!--- START - Footer -->
         <div class="footerContainer grid-y">
