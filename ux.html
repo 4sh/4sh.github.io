@@ -29,6 +29,16 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6e500c2f-45f5-48b6-a578-bbdd7c72447a" data-blockingmode="auto" type="text/javascript"></script>
+
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PMCWCHW');</script>
+      <!-- End Google Tag Manager -->
+
+      <script src="assets/js/ux_diagnostic.js" data-cookieconsent="necessary"></script>
   </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -294,8 +304,8 @@
                            style="margin-top: 24px;">
                             Voir nos offres
                         </a>
-                        <a href="contact.html?from=diagnosticux" class="cell shrink button ux has-icon-right"
-                           title="Contactez nous" style="margin-top: 24px;">
+                        <a class="cell shrink button ux has-icon-right showDiagButton"
+                           title="Lancer le diagnostic" style="margin-top: 24px;">
                             Demandez votre diagnostic UX gratuit<i class="fa fa-chevron-right"></i>
                         </a>
                     </div>
@@ -305,6 +315,277 @@
                     <img class="hide-for-small-only"
                          src="assets/img/png/illu-ux.png" width="640" data-parallax='{"y":"-5%", "scale":1.1}'
                          alt="Illustration 4SH UX">
+                </div>
+        
+                <div id="UxDiagPos"></div>
+                <div class="cell small-24 offersForm _ux _withCurveBottom" id="UxDiag">
+                    <div class="grid-x">
+                        <div class="cell small-3 offersForm-closeContainer">
+                            <button class="offersForm-close" id="closeForm">
+                                <i class="fas fa-angle-double-up"></i>
+                            </button>
+                        </div>
+                        <div class="cell auto">
+                            <h3 class="font-bold txt-ux text-center">Réalisez votre diagnostic UX</h3>
+                        </div>
+                        <div class="cell small-3">
+                        </div>
+                    </div>
+        
+                    <div class="grid-x align-center">
+                        <div class="cell small-24 large-11 xlarge-12">
+                            <p class="text-center">
+                                Réalisez votre diagnostic UX en 2 étapes : <br>
+                                Répondre à 5 questions puis prendre contact avec notre équipe UX pour continuer le diagnostic.
+                            </p>
+                        </div>
+                    </div>
+        
+        
+                    <div class="spacer" style="margin-bottom: 16px">&nbsp;</div>
+        
+                    <div class="grid-x grid-padding-x align-middle">
+                        <div class="cell show-for-large large-1"></div>
+                        <div class="cell small-24 large-auto">
+                            <div class="progress" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-meter" style="width: 16.6666%" id="progress"></div>
+                            </div>
+        
+                            <div class="offersForm-questionsContainer grid-y">
+                                <div class="cell small-24 grid-x grid-padding-x">
+                                    <div class="cell shrink grid-y align-center">
+                                        <button class="cell shrink far fa-arrow-alt-circle-left offersForm-buttons _disabled" id="prevButton" disabled></button>
+                                    </div>
+                                    <form id="UxDiagForm" class="cell auto">
+                                        <div class="offersForm-question _active" data-formStep="1">
+                                            <h5 class="txt-ux font-bold">Quel est le public de votre application ?</h5>
+        
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="general" name="targetType">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Grand public</span>
+                                            </label>
+                                            <br>
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="professional" name="targetType">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Professionnels</span>
+                                            </label>
+                                            <br>
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="internal" name="targetType">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Collaborateurs internes</span>
+                                            </label>
+                                        </div>
+        
+                                        <div class="offersForm-question" data-formStep="2">
+                                            <h5 class="txt-ux font-bold">Pourrions-nous avoir accès à vos utilisateurs  ?</h5>
+        
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="true" name="userAccess">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Oui</span>
+                                            </label>
+                                            <br>
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="false" name="userAccess">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Non</span>
+                                            </label>
+                                        </div>
+        
+                                        <div class="offersForm-question" data-formStep="3">
+                                            <h5 class="txt-ux font-bold">Quelles seraient les disponibilités de vos utilisateurs ?</h5>
+        
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="minutes" name="userAvailabilities">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Quelques minutes</span>
+                                            </label>
+                                            <br>
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="hours" name="userAvailabilities">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Quelques heures</span>
+                                            </label>
+                                            <br>
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="days" name="userAvailabilities">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Quelques jours</span>
+                                            </label>
+                                        </div>
+        
+                                        <div class="offersForm-question" data-formStep="4">
+                                            <h5 class="txt-ux font-bold">Quand voudriez-vous que l'analyse UX soit réalisée ?</h5>
+        
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="soon" name="diagDate">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Très prochainement</span>
+                                            </label>
+                                            <br>
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="comingMonths" name="diagDate">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Dans les prochains mois</span>
+                                            </label>
+                                            <br>
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="underConsideration" name="diagDate">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">C'est un sujet en réflexion</span>
+                                            </label>
+                                        </div>
+        
+                                        <div class="offersForm-question" data-formStep="5">
+                                            <h5 class="txt-ux font-bold">En combien de temps souhaiteriez-vous que l'analyse UX soit réalisée ?</h5>
+        
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="light" name="diagType">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Quelques jours...<span class="font-italic font-normal"> pour étudier les grandes tendances</span></span>
+                                            </label>
+                                            <br>
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="complete" name="diagType">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Quelques semaines... <span class="font-italic font-normal">pour une étude plus complète</span></span>
+                                            </label>
+                                            <br>
+                                            <label class="inputRadio _ux">
+                                                <input type="radio" value="full" name="diagType">
+                                                <span class="inputRadio-skin"></span>
+                                                <span class="inputRadio-label">Quelques mois... <span class="font-italic font-normal">pour une étude approfondie</span> </span>
+                                            </label>
+                                        </div>
+                                        <div class="offersForm-question" data-formStep="6">
+                                            <h5 class="txt-ux font-bold">Félicitations à vous !</h5>
+        
+                                            <p>
+                                                Vous avez terminé la première étape du diagnostic et vous pouvez déjà retrouver les méthodes adaptées à vos besoins. Maintenant, nous proposons de vous recontacter pour terminer votre diagnostic, laissez-nous vos coordonnées ci-après.
+                                            </p>
+        
+                                            <p class="txt-ux text-center" style="margin-top: 24px; margin-bottom: 16px">
+                                                <i class="fas fa-angle-double-down" style="font-size: 24px"></i>
+                                            </p>
+                                        </div>
+                                    </form>
+                                    <div class="cell shrink grid-y align-center">
+                                        <button class="far fa-arrow-alt-circle-right offersForm-buttons _disabled" id="nextButton" disabled></button>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <div class="cell show-for-large large-1"></div>
+                        <div class="cell small-24 large-8">
+                            <div class="offersForm-tagsContainer">
+                                <img class="offersForm-tagsContainer-img" src="../assets/img/png/illu-ux-preco.png">
+                                <div class="grid-x offersForm-tagsContainer-list">
+                                    <div class="cell shrink formTag" data-tag="standardised">
+                                        Questionnaire de satisfaction standardisé
+                                    </div>
+                                    <div class="cell shrink formTag" data-tag="personalized">
+                                        Questionnaire personnalisé
+                                    </div>
+                                    <div class="cell shrink formTag" data-tag="field">
+                                        Observation terrain
+                                    </div>
+                                    <div class="cell shrink formTag" data-tag="focus">
+                                        Entretiens / focus group
+                                    </div>
+                                    <div class="cell shrink formTag" data-tag="heuristic">
+                                        Analyse heuristique
+                                    </div>
+                                    <div class="cell shrink formTag" data-tag="state">
+                                        Etat de l'art
+                                    </div>
+                                    <div class="cell shrink formTag" data-tag="personas">
+                                        Personas
+                                    </div>
+                                    <div class="cell shrink formTag" data-tag="card">
+                                        Tri de cartes
+                                    </div>
+                                    <div class="cell shrink formTag" data-tag="user">
+                                        Tests utilisateur
+                                    </div>
+                                    <div class="cell shrink formTag" data-tag="protopersonas">
+                                        Proto-personas
+                                    </div>
+                                    <div class="cell shrink formTag" data-tag="guerilla">
+                                        Guerilla test
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell show-for-large large-1"></div>
+                    </div>
+        
+                    <div class="spacer" style="margin-bottom: 32px">&nbsp;</div>
+        
+                    <form class="grid-x align-center" id="UxDiagSendResultForm" style="display: none">
+                        <div class="cell small-23 large-12 offersForm-questionsContainer">
+                            <h4 class="txt-ux font-bold text-center">
+                                <i class="fas fa-bolt"></i> Diagnostic flash
+                            </h4>
+                            <p>
+                                Notre équipe UX vous propose de réaliser gratuitement un diagnostic flash où des consultants UX vous offriront leur expertise pour relever 3 axes d'améliorations sur votre application.
+                            </p>
+                            <div class="form grid-x">
+                                <label class="cell small-24">
+                                    Nom <small>(Obligatoire)</small>
+                                    <input type="text" id="lastname" required="required" >
+                                </label>
+        
+                                <label class="cell small-24">
+                                    Prénom <small>(Obligatoire)</small>
+                                    <input type="text" id="firstName" required="required" >
+                                </label>
+        
+                                <label class="cell small-24">
+                                    Fonction
+                                    <input type="text" id="role">
+                                </label>
+                                <label class="cell small-24">
+                                    Nom de l'entreprise <small>(Obligatoire)</small>
+                                    <input type="text" required="required" id="company">
+                                </label>
+                                <label class="cell small-24">
+                                    Adresse mail <small>(Obligatoire)</small>
+                                    <input type="email" required="required" id="email">
+                                </label>
+                                <label class="cell small-24">
+                                    Téléphone
+                                    <input type="tel" id="phone" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
+                                </label>
+        
+                                <label class="cell small-24">
+                                    Description du produit (ou URL du produit) <small>(Obligatoire)</small>
+                                    <textarea id="link" rows="4" required="required"></textarea>
+                                </label>
+        
+                                <div class="cell small-24 text-right">
+                                    <button class="button ux has-icon-right" type="submit" id="submitUxFormButton">
+                                        Poursuivre le diagnostic flash <i class="fa fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+        
+                    <div class="grid-x align-center" id="UxDiagSendResultText" style="display: none">
+                        <div class="cell small-23 large-12 offersForm-questionsContainer">
+                            <h4 class="txt-ux font-bold text-center">
+                                Votre demande a bien été envoyée !
+                            </h4>
+        
+                            <p>
+                                Merci pour votre confiance, nous nous engageons à vous contacter au plus vite !
+                            </p>
+                        </div>
+                    </div>
                 </div>
         
                 <div class="cell small-24 grid-x detailsPrestation">
@@ -369,14 +650,14 @@
                             <div class="cell small-24 medium-10 large-8">
                                 <span class="title-large font-bold detailsPrestation-offers-title text-center">Analyse UX</span>
                                 <div class="grid-y align-center align-middle">
-                                    <p class="text-center">Vous ne savez pas quelle méthode est la plus adaptées pour vous ?</p>
-                                    <a href="contact.html?from=diagnosticux" class="cell shrink button ux has-icon-right"
-                                       title="Contactez nous" style="margin-top: 8px; margin-bottom: 24px;">
+                                    <p class="text-center">Vous ne savez pas quelle méthode est la plus adaptée pour vous ?</p>
+                                    <button class="cell shrink button ux has-icon-right showDiagButton"
+                                       title="Lancer le diagnostic" style="margin-top: 8px; margin-bottom: 24px;">
                                         Demandez votre diagnostic UX gratuit<i class="fa fa-chevron-right"></i>
-                                    </a>
+                                    </button>
                                 </div>
         
-                                <div class="grid-x small-up-2 xlarge-up-3 grid-margin-x grid-margin-y _ux detailsPrestation-offers-list _withButton">
+                                <div class="grid-x small-up-2 xlarge-up-2 xxlarge-up-3 grid-margin-x grid-margin-y _ux detailsPrestation-offers-list _withButton">
                                     <div class="cell item">
                                         <i class="fa fa-eye"></i>
                                         Observation terrain
@@ -563,13 +844,6 @@
     ga('create', 'UA-98453482-1', 'auto');
     ga('send', 'pageview');
 </script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PMCWCHW');</script>
-<!-- End Google Tag Manager -->
 <!-- Lead the Way -->
 <script type="text/javascript">
     window.ltwAsyncInit = function(){init_multiplegl('https://gl.hostcg.com/',[['https://gl.hostcg.com/','3083','rtcweqlt52']]);};
