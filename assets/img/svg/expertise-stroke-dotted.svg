@@ -1,3 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1282.557" height="257.339" viewBox="0 0 1282.557 257.339">
-  <path id="Tracé_367" data-name="Tracé 367" d="M116,2208.538s101.053,126.7,293.488,126.7h733.651s252.746-23.869,252.746,129.7" transform="translate(-114.827 -2207.603)" fill="none" stroke="#ea2631" stroke-width="3" stroke-dasharray="15"/>
+    <path id="Tracé_367" data-name="Tracé 367"
+          d="M116,2208.538s101.053,126.7,293.488,126.7h733.651s252.746-23.869,252.746,129.7"
+          transform="translate(-114.827 -2207.603)" fill="none" stroke="#ea2631" stroke-width="3"
+          stroke-dasharray="15"/>
 </svg>

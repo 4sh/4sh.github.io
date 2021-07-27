@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Guide</title>
@@ -9,127 +9,133 @@
 
     <!-- Style guide-specific CSS goes here. -->
     <style>
-    /* This styles individual sections of the style guide */
-    .ss-section:not(:last-child) {
-      padding-bottom: 4rem;
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 4rem;
-    }
+        /* This styles individual sections of the style guide */
+        .ss-section:not(:last-child) {
+            padding-bottom: 4rem;
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 4rem;
+        }
 
-    /* This styles code blocks used for examples. */
-    .ss-code code {
-      display: block;
-      padding: 1rem;
-      overflow-x: scroll;
-      margin-bottom: 1.5rem;
-    }
+        /* This styles code blocks used for examples. */
+        .ss-code code {
+            display: block;
+            padding: 1rem;
+            overflow-x: scroll;
+            margin-bottom: 1.5rem;
+        }
 
-    /* This styles the example rows used in the grid documentation. */
-    .grid-x.display {
-      background: #eee;
-      font-size: 11px;
-      margin-bottom: 10px;
-      line-height: 2rem;
-      border: solid 1px #c6c6c6;
-      margin-left: 0 !important;
-      margin-right: 0 !important; }
-      .grid-x.display .cell:nth-child(2), .grid-x.display .cell.small-centered, .grid-x.display .cell.large-centered {
-        background: #e1e1e1; }
-      .grid-x.display .cell.color-end {
-        background: #d4d4d4; }
+        /* This styles the example rows used in the grid documentation. */
+        .grid-x.display {
+            background: #eee;
+            font-size: 11px;
+            margin-bottom: 10px;
+            line-height: 2rem;
+            border: solid 1px #c6c6c6;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
 
-    /* This styles the color blocks used in the color documentation. */
-    .color-block {
-      border-radius: 2px;
-      display: block;
-      padding: 8px 8px 6px;
-      color: #333;
-      text-transform: uppercase;
-      border: 1px solid #ddd;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    }
-      .color-block span {
-        display: block;
-        width: 100%;
-        height: 100px;
-        margin-bottom: 0.42857rem;
-      }
+        .grid-x.display .cell:nth-child(2), .grid-x.display .cell.small-centered, .grid-x.display .cell.large-centered {
+            background: #e1e1e1;
+        }
 
-      .sg-header {
-        background: #eee;
-        padding: 2rem;
-      }
+        .grid-x.display .cell.color-end {
+            background: #d4d4d4;
+        }
 
-      .grid-container {
-        max-width: 1400px;
-      }
+        /* This styles the color blocks used in the color documentation. */
+        .color-block {
+            border-radius: 2px;
+            display: block;
+            padding: 8px 8px 6px;
+            color: #333;
+            text-transform: uppercase;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
 
-      .sg-side-menu {
-        margin-left: 1rem;
-      }
+        .color-block span {
+            display: block;
+            width: 100%;
+            height: 100px;
+            margin-bottom: 0.42857rem;
+        }
 
-      .grid-container.padded {
-        padding-top: 2rem;
-      }
+        .sg-header {
+            background: #eee;
+            padding: 2rem;
+        }
 
-      .sg-side-menu a {
-        transition: all 0.15s ease-in;
-      }
+        .grid-container {
+            max-width: 1400px;
+        }
 
-      .sg-side-menu a:hover {
-        background: #eee;
-      }
+        .sg-side-menu {
+            margin-left: 1rem;
+        }
 
-      .sg-side-menu a:focus {
-        background: #1468a0;
-        color: #fff;
-      }
+        .grid-container.padded {
+            padding-top: 2rem;
+        }
 
-      .sg-side-menu.menu {
-        overflow: auto;
-        height: 100vh;
-        padding-bottom: 5rem;
-      }
+        .sg-side-menu a {
+            transition: all 0.15s ease-in;
+        }
+
+        .sg-side-menu a:hover {
+            background: #eee;
+        }
+
+        .sg-side-menu a:focus {
+            background: #1468a0;
+            color: #fff;
+        }
+
+        .sg-side-menu.menu {
+            overflow: auto;
+            height: 100vh;
+            padding-bottom: 5rem;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
 
-    <header class="sg-header" id="sg-header">
-      <div class="grid-container">
+<header class="sg-header" id="sg-header">
+    <div class="grid-container">
         <h1>Style Guide</h1>
-        <p class="lead">This style guide was built with Foundation for Sites. For more information on how to use this responsive front-end framework, check out the documentation, get help from the Foundation community, or request immediate technical support.</p>
+        <p class="lead">This style guide was built with Foundation for Sites. For more information on how to use this
+            responsive front-end framework, check out the documentation, get help from the Foundation community, or
+            request immediate technical support.</p>
         <a href="https://foundation.zurb.com/sites/docs/" class="button">Visit the Docs</a>
         <a href="https://foundation.zurb.com/forum" class="secondary button">Foundation Forum</a>
         <a href="https://foundation.zurb.com/get-involved/support.html" class="secondary button">Technical Support</a>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <div class="grid-container padded">
-      <div class="grid-x grid-margin-x" data-sticky-container>
+<div class="grid-container padded">
+    <div class="grid-x grid-margin-x" data-sticky-container>
 
         <div class="large-3 medium-4 cell">
-          <div class="sticky" data-sticky data-top-anchor="sg-header:bottom">
-            <ul class="vertical menu sg-side-menu" data-smooth-scroll data-animation-easing="swing">
+            <div class="sticky" data-sticky data-top-anchor="sg-header:bottom">
+                <ul class="vertical menu sg-side-menu" data-smooth-scroll data-animation-easing="swing">
 
-                <li><a href="#the-grid">The Grid</a></li>
-                <li><a href="#colors">Colors</a></li>
-                <li><a href="#typography">Typography</a></li>
-                <li><a href="#buttons">Buttons</a></li>
-                <li><a href="#forms">Forms</a></li>
-                <li><a href="#new-section">New Section</a></li>
+                    <li><a href="#the-grid">The Grid</a></li>
 
-            </ul>
-          </div>
+                </ul>
+            </div>
         </div>
 
         <div class="large-9 medium-8 cell">
             <section class="ss-section" id="the-grid">
-              <h1>The Grid</h1><p class="lead">Problem: You&#39;ve got tons of content, each needing different sized cells, and don&#39;t know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
+                <h1>The Grid</h1><p class="lead">Problem: You&#39;ve got tons of content, each needing different sized cells, and don&#39;t know how to quick and easily get it all done. Solution: The awesome XY grid!</p>
 
 <hr>
-<h2>Overview</h2><p>The grid is built around two key elements: grid-x and cells. grid-container create a max-width and contain the grid, and cells create the final structure. Everything on your page that you don&#39;t give a specific structural style to should be within a grid-x or cell.</p>
+<h2>Overview</h2><p>The grid is built around two key elements: grid-x and cells. grid-container create a max-width and contain the grid, and
+cells create the final structure. Everything on your page that you don&#39;t give a specific structural style to should be
+within a grid-x or cell.</p>
 <hr>
-<h2>Nesting</h2><p>In the Grid you can nest cells down as far as you&#39;d like. Just embed grid-x inside cells and go from there. Each embedded grid-x can contain up to 12 cells.</p>
+<h2>Nesting</h2><p>In the Grid you can nest cells down as far as you&#39;d like. Just embed grid-x inside cells and go from there. Each
+embedded grid-x can contain up to 12 cells.</p>
 <hr>
 <h2>How to Use</h2><p>Using this framework is easy. Here&#39;s how your code will look when you use a series of <code>&lt;div&gt;</code> tags to create cells.</p>
 <div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid-x"</span>&gt;</span>
@@ -168,7 +174,8 @@
 </div>
 
 <hr>
-<h2>Nesting grid-x</h2><p>In the Grid you can nest cells down as far as you&#39;d like. Just embed grid-x inside cells and go from there. Each embedded grid-x can contain up to 12 cells.</p>
+<h2>Nesting grid-x</h2><p>In the Grid you can nest cells down as far as you&#39;d like. Just embed grid-x inside cells and go from there. Each
+embedded grid-x can contain up to 12 cells.</p>
 <div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid-x"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-8 cell"</span>&gt;</span>8
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid-x"</span>&gt;</span>
@@ -198,7 +205,9 @@
 </div>
 
 <hr>
-<h2>Small Grid</h2><p>As you&#39;ve probably noticed in the examples above, you have access to a small, medium, and large grid. If you know that your grid structure will be the same for small devices as it will be on large devices, just use the small grid. You can override your small grid classes by adding medium or large grid classes.</p>
+<h2>Small Grid</h2><p>As you&#39;ve probably noticed in the examples above, you have access to a small, medium, and large grid. If you know that
+your grid structure will be the same for small devices as it will be on large devices, just use the small grid. You can
+override your small grid classes by adding medium or large grid classes.</p>
 <div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid-x"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-2 cell"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"small-10 cell"</span>&gt;</span>10, last<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -214,9 +223,8 @@
   <div class="small-3 cell">3</div>
   <div class="small-9 cell">9, last</div>
 </div>
-            </section>
-            <section class="ss-section" id="colors">
-              <h1>Colors</h1><p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>_settings.scss</code></p>
+
+<h1>Colors</h1><p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>_settings.scss</code></p>
 
 <hr>
 <div class="row up-1 medium-up-3 large-up-5">
@@ -251,40 +259,45 @@
     </div>
   </div>
 </div>
-            </section>
-            <section class="ss-section" id="typography">
-              <h1>Typography</h1><p class="lead">This design uses Helvetica Neue for headings and paragraph text.</p>
+
+<h1>Typography</h1><p class="lead">This design uses Helvetica Neue for headings and paragraph text.</p>
 
 <hr>
-<h2>Headings</h2><p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)</p>
+<h2>Headings</h2><p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML
+elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)</p>
 <hr>
-<h2>Paragraphs</h2><p>Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such.</p>
+<h2>Paragraphs</h2><p>Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block
+level elements, meaning they stack vertically when repeated. Use them as such.</p>
 <hr>
 <h1>Heading Level 1</h1>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque
+accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
 <h2>Heading Level 2</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque
+accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
 <h3>Heading Level 3</h3>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque
+accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
 <h4>Heading Level 4</h4>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque
+accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
 <h5>Heading Level 5</h5>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque
+accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
 <h6>Heading Level 6</h6>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
-
-            </section>
-            <section class="ss-section" id="buttons">
-              <h1>Buttons</h1><p class="lead">Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you&#39;re strapped to. On the web, we follow similar conventions.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque
+accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+<h1>Buttons</h1><p class="lead">Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you&#39;re strapped to. On the web, we follow similar conventions.</p>
 
 <hr>
-<h2>Primary Buttons</h2><p>These buttons are primary calls to action and should be used sparingly. Their size can be adjusted with the <code>.tiny</code>, <code>.small</code>, and <code>.large</code> classes.</p>
+<h2>Primary Buttons</h2><p>These buttons are primary calls to action and should be used sparingly. Their size can be adjusted with the <code>.tiny</code>
+, <code>.small</code>, and <code>.large</code> classes.</p>
 <div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"primary large button"</span>&gt;</span>Large button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"primary button"</span>&gt;</span>Regular button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"primary small button"</span>&gt;</span>Small button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
@@ -303,10 +316,7 @@
 <div class="ss-code-live"><a href="#" class="secondary large button">Large button</a>
 <a href="#" class="secondary button">Regular button</a>
 <a href="#" class="secondary small button">Small button</a>
-<a href="#" class="secondary tiny button">Tiny button</a></div>
-            </section>
-            <section class="ss-section" id="forms">
-              <h1>Forms</h1><p class="lead">Use forms to allow users to interact with the site and provide information to the company.</p>
+<a href="#" class="secondary tiny button">Tiny button</a></div><h1>Forms</h1><p class="lead">Use forms to allow users to interact with the site and provide information to the company.</p>
 
 <hr>
 <h2>Elements of a Form</h2><p>A form should be marked up using its default HTML properties. The ones we make use of include (in hierarchical order):</p>
@@ -321,17 +331,23 @@
 <hr>
 <h2>How to Use</h2><p>Make forms great and easy to use with the following rules:</p>
 <ul>
-<li>Wrap checkboxes and radio buttons within labels for larger hit areas, and be sure to set the for, name, and id attributes for all applicable elements.</li>
+<li>Wrap checkboxes and radio buttons within labels for larger hit areas, and be sure to set the for, name, and id
+attributes for all applicable elements.</li>
 <li>Series of checkboxes and radio buttons below within a <code>&lt;ul class=&quot;inline-list&quot;&gt;</code>.</li>
-<li>Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).</li>
+<li>Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select
+lists).</li>
 </ul>
 <hr>
-<h2>Learn All About Forms</h2><p>Check out the <a href="http://foundation.zurb.com/sites/docs">Foundation Docs</a> to learn about how flexible our forms are for creating different layouts. It works perfectly with the grid to meet all your form needs.</p>
+<h2>Learn All About Forms</h2><p>Check out the <a href="http://foundation.zurb.com/sites/docs">Foundation Docs</a> to learn about how flexible our forms are for
+creating different layouts. It works perfectly with the grid to meet all your form needs.</p>
 <hr>
-<h2>Form Layouts</h2><p>Form elements in Foundation are styled based on their type attribute rather than a class. Inputs in Foundation have another major advantage — they are full width by default. That means that inputs will run as wide as the column that contains them. However, you have two options which make these forms extremely versatile:</p>
+<h2>Form Layouts</h2><p>Form elements in Foundation are styled based on their type attribute rather than a class. Inputs in Foundation have
+another major advantage — they are full width by default. That means that inputs will run as wide as the column that
+contains them. However, you have two options which make these forms extremely versatile:</p>
 <ul>
 <li>You can size inputs using column sizes, like <code>.medium-6</code>, <code>.small-6</code>.</li>
-<li>You can create row elements inside your form and use columns for the form, including inputs, labels and more. Rows inside a form inherit some special padding to even up input spacing.</li>
+<li>You can create row elements inside your form and use columns for the form, including inputs, labels and more. Rows
+inside a form inherit some special padding to even up input spacing.</li>
 </ul>
 <hr>
 <h2>Form Example</h2><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
@@ -436,10 +452,8 @@
       <textarea placeholder="placeholder"></textarea>
     </div>
   </div>
-</form></div>
-            </section>
-            <section class="ss-section" id="new-section">
-              <h1>New Section</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora omnis suscipit id ut laborum recusandae molestias hic aliquid <strong>expedita!</strong> <a href="zurb.com">Non dicta</a>, autem obcaecati error, id ab voluptate unde culpa nulla.</p>
+</form></div><h1>New Section</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora omnis suscipit id ut laborum recusandae molestias hic
+aliquid <strong>expedita!</strong> <a href="zurb.com">Non dicta</a>, autem obcaecati error, id ab voluptate unde culpa nulla.</p>
 <div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
@@ -450,9 +464,9 @@
             </section>
         </div>
 
-      </div>
     </div>
+</div>
 
-    <script src="assets/js/app.js"></script>
-  </body>
+<script src="assets/js/app.js"></script>
+</body>
 </html>
