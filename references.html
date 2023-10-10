@@ -317,6 +317,7 @@
                             </ul>
                             <ul class="realisations-tabs _sub cell auto grid-x grid-padding-x" data-tabTarget="all" style="display: none;"></ul>
                             <ul class="realisations-tabs _sub cell auto grid-x grid-padding-x" data-tabTarget="domain">
+                                <li class="cell shrink" data-setFilter="ecology"><span>Écologie</span></li>
                                 <li class="cell shrink" data-setFilter="supply"><span>Logistique</span></li>
                                 <li class="cell shrink" data-setFilter="housing"><span>Immobilier</span></li>
                                 <li class="cell shrink" data-setFilter="press"><span>Presse</span></li>
@@ -344,11 +345,13 @@
                                 <li class="cell shrink" data-setFilter="java"><span>Java</span></li>
                                 <li class="cell shrink" data-setFilter="kotlin"><span>Kotlin</span></li>
                                 <li class="cell shrink" data-setFilter="mongo"><span>Mongo</span></li>
+                                <li class="cell shrink" data-setFilter="nextjs"><span>Nextjs</span></li>
                                 <li class="cell shrink" data-setFilter="mysql"><span>MySQL</span></li>
                                 <li class="cell shrink" data-setFilter="phonegap"><span>PhoneGap</span></li>
                                 <li class="cell shrink" data-setFilter="postgresql"><span>PostgreSQL</span></li>
                                 <li class="cell shrink" data-setFilter="rabbitmq"><span>RabbitMQ</span></li>
                                 <li class="cell shrink" data-setFilter="restx"><span>RestX</span></li>
+                                <li class="cell shrink" data-setFilter="react"><span>React</span></li>
                                 <li class="cell shrink" data-setFilter="sass"><span>Sass</span></li>
                                 <li class="cell shrink" data-setFilter="spring"><span>Spring</span></li>
                                 <li class="cell shrink" data-setFilter="kafka"><span>Kafka</span></li>
@@ -408,6 +411,32 @@
                             </div>
                         </div>
                         <!-- ARKHE - NEW BOA - END -->
+        
+                        <!-- CIRAD - START -->
+                        <div class="cell small-24 medium-12" data-filter="ecology mobility angular html css sass java ux studio">
+                            <div class="realisationsCard" style="background-color: #24A538;">
+                                <a href="/references/cirad.html" class="realisationsCard-link">
+                                    <div class="realisationsCard-image">
+                                        <img src="/assets/img/png/references/cirad/ref-cirad.png">
+                                    </div>
+                                    <div class="grid-x align-middle grid-padding-x realisationsCard-head">
+                                        <div class="cell shrink">
+                                             <span class="realisationsCard-logo">
+                                                <img src="/assets/img/png/references/cirad/logo-cirad.png" alt="Logo Cirad">
+                                             </span>
+                                        </div>
+                                        <div class="cell auto realisationsCard-title">
+                                            <span class="title-medium txt-white font-bold">CIRAD - CiO2</span>
+                                            <p>Calculette des émissions de gaz à effet de serre.</p>
+                                        </div>
+                                        <div class="cell shrink grid-x text-right realisationsCard-arrow">
+                                            <i class="fa fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- CIRAD - END -->
         
                         <!-- SUD OUEST SOCOA - START -->
                         <div class="cell small-24 medium-12" data-filter="press angular postgresql java restx html sass css ux studio facility">
@@ -721,6 +750,32 @@
                         </div>
                         <!-- Aca Nexia - END -->
         
+                        <!-- Ma Renov - START -->
+                        <div class="cell small-24 medium-12" data-filter="ecology sass nextjs react http4k facility ux">
+                            <div class="realisationsCard" style="background-color: #59B698;">
+                                <a href="/references/marenov.html"  class="realisationsCard-link">
+                                    <div class="realisationsCard-image">
+                                        <img src="/assets/img/png/references/marenov/ref-marenov.png">
+                                    </div>
+                                    <div class="grid-x align-middle grid-padding-x realisationsCard-head">
+                                        <div class="cell shrink">
+                                             <span class="realisationsCard-logo">
+                                                <img src="/assets/img/png/references/marenov/logo-marenov.png" alt="Logo Ma Rénov" width="58">
+                                             </span>
+                                        </div>
+                                        <div class="cell auto realisationsCard-title">
+                                            <span class="title-medium txt-white font-bold">Ma Rénov - Bordeaux Métropole</span>
+                                            <p>Ma Rénov - Le service public qui facilite et sécurise votre projet de rénovation énergétique.</p>
+                                        </div>
+                                        <div class="cell shrink grid-x text-right realisationsCard-arrow">
+                                            <i class="fa fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Ma Renov - END -->
+        
                         <!-- NO REFERENCES - START -->
                         <div class="cell small-24 text-center _hidden" id="noRefAlert">
                             <img src="/assets/img/svg/no-ref-illustration.svg" alt="Illustration pas de références">
@@ -890,7 +945,10 @@
         <!--- END - Footer -->
     </main>
 </div>
+
 <script type="text/javascript" src="assets/js/app.js"></script>
+
+
 <script type="text/javascript">
     var sidebar = new StickySidebar('.sidebar', {
         bottomSpacing: 90,
@@ -911,14 +969,6 @@
 </script>
 
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script type="text/javascript" src="/__/firebase/7.24.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script type="text/plain" data-cookieconsent="statistics" src="/__/firebase/7.24.0/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script type="text/javascript" src="/__/firebase/init.js"></script>
+<!-- NO FIREBASE SCRIPT IN LOCAL -->
 </body>
 </html>
