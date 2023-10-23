@@ -583,6 +583,7 @@
                         offerTitle
                         slug
                         offerType
+                        provided
                         offerTechnos
                         uxskills
                         offerContext {
@@ -609,7 +610,7 @@
             jobsList.innerHTML = jobs.map((job, i) =>
                 `
                 <li class="stageCard" id="viewMore-${job.slug}" data-toggler=".is-active">
-                    <div class="card _white ">
+                    <div class="card _white ${job.provided?'_taken':''}">
                         <div class="grid-x">
                             <div class="cell small-24 medium-shrink text-center">
                                 <img class="stage-Illu" src="/assets/img/png/stages/subject-${job.offerType}.png">
@@ -704,6 +705,14 @@
 </script>
 
 
-<!-- NO FIREBASE SCRIPT IN LOCAL -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script type="text/javascript" src="/__/firebase/7.24.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script type="text/plain" data-cookieconsent="statistics" src="/__/firebase/7.24.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script type="text/javascript" src="/__/firebase/init.js"></script>
 </body>
 </html>
