@@ -46,6 +46,17 @@
     })(window, document, 'script', 'dataLayer', 'GTM-PMCWCHW');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11435542132">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11435542132');
+    </script>
+
 
 </head>
 <body class="">
@@ -112,6 +123,7 @@
                                                 Notre méthode
                                             </a>
                                         </li>
+
                                         <li class="dropdownContent-list-item">
                                             <a href="expertise.html#sectionCommitments" title="Nos engagements">
                                                 <span class="navDropdown-icon"><img
@@ -203,6 +215,13 @@
                                                 <span class="navDropdown-icon"><img
                                                         src="/assets/img/svg/nav-icon-job.svg"></span>
                                                 Les métiers
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item">
+                                            <a href="nous-connaitre.html#sectionLocations" href="#" title="Les métiers">
+                                                <span class="navDropdown-icon"><img
+                                                        src="/assets/img/svg/nav-icon-france.svg"></span>
+                                                Nos locaux
                                             </a>
                                         </li>
                                         <li class="dropdownContent-list-item">
@@ -515,6 +534,49 @@
         </div>
         <!-- END Section Global Skills -->
         
+        <!-- START Section Our Location -->
+        <div id="sectionLocations" class="grid-y align-center section">
+            <div class="cell shrink grid-x align-middle grid-padding-y">
+                <div class="cell small-24 medium-12 groupTitle section-container">
+                    <span class="title-large font-bold groupTitle-first">Nos locaux</span>
+                    <h2 class="groupTitle-sub">4SH, se trouve dans différentes régions de France</h2>
+                    <span class="groupTitle-symbole"></span>
+                    <br>
+                    <br>
+                    <p>Depuis nos agences situées au <b>Haillan, Bordeaux</b> et <b>Capbreton,</b> <br>
+                    nos équipes pluridisciplinaires s’impliquent au quotidien aux côtés de nos clients dans la réussite de leurs challenges.</p>
+                </div>
+            </div>
+        
+            <div class="franceMap show-for-large">
+                <div class="locationZone">
+                    <img class="map" src="/assets/img/svg/map_france.svg">
+                        <div class="grid-x align-middle locationZone-bordeaux">
+                            <img class="cell shrink pinMap" src="/assets/img/svg/pin_map_france.svg">
+                            <div class="cell shrink grid-y">
+                                <a class="cell shrink buttonCity" onclick="changePrefix('haillan')">Le Haillan</a>
+                                <a class="cell shrink buttonCity" onclick="changePrefix('bdx-gare')">Bordeaux gare</a>
+                            </div>
+                        </div>
+                        <div class="grid-x align-middle locationZone-capbreton">
+                            <img class="cell shrink pinMap" src="/assets/img/svg/pin_map_france.svg">
+                            <div class="cell shrink">
+                                <a class="buttonCity" onclick="changePrefix('capbreton')">Capbreton</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="pictureAgency">
+                    <div class="pictureAgency-left">
+                        <img class="img1" src="/assets/img/png/picture-capbreton-1.png">
+                        <img class="img2" src="/assets/img/png/picture-capbreton-2.png">
+                    </div>
+                    <div class="pictureAgency-right">
+                        <img class="img3" src="/assets/img/png/picture-capbreton-3.png">
+                    </div>
+                </div>
+        </div>
+        <!-- END Section Our Location -->
+        
         <!-- START Section Collective -->
         <div id="sectionCollective" class="grid-y align-center section">
             <div class="cell shrink grid-x align-middle grid-padding-y">
@@ -759,7 +821,7 @@
                     </address>
                 </div>
 
-                <div class="cell small-24 medium-auto addressBloc">
+                <div class="cell auto medium-auto addressBloc">
                     <span class="title addressBloc-title"><i class="fa fa-map-marker-alt"></i>Bordeaux</span>
                     <address class="addressBloc-text">
                         <a href="https://goo.gl/maps/Fw7vuuGnaLpK7n9dA" alt="Adresse 4SH Bordeaux">
@@ -769,6 +831,8 @@
                         <br>
                         <br>
                         <a href="https://w3w.co/souder.tireuse.source" class="link"><b>///souder.tireuse.source</b></a>
+                        <br>
+                        <a href="https://w3w.co/eclaireur.vibrer.trouvons" class="link"><b>///éclaireur.vibrer.trouvons</b></a>
                         <br>
                         <br>
                         <a href="tel:+330963286273" class="link">+33 (0)9 63 28 62 73</a>
@@ -783,7 +847,7 @@
                         </a>
                     </address>
                 </div>
-                <div class="cell small-24 large-11">
+                <div class="cell small-24 large-9">
                     <div class="grid-x grid-padding-x siteMap">
                         <div class="cell small-12 medium-auto">
                             <ul class="siteMap-list">
@@ -863,8 +927,35 @@
 
     gtag('config', 'G-CGMNJWWVKB');
 </script>
+<script>
+    function changePrefix(prefix) {
+        const images = document.querySelectorAll('.pictureAgency img');
+        const root = "/assets/img/png/picture-";
 
+        for (let i = 0; i < images.length; i++) {
+            const src = images[i].getAttribute('src');
+            images[i].setAttribute('src', root + prefix + src.substring(src.lastIndexOf('-')));
+        }
 
+        // Ajoute la classe active au lien cliqué
+        const links = document.querySelectorAll('.locationZone a');
+        for (let i = 0; i < links.length; i++) {
+            links[i].classList.remove('is-active');
+        }
+        event.target.classList.add('is-active');
+    }
+
+    // Fonction pour ajouter la classe 'loaded' aux images une fois qu'elles sont chargées
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('.pictureAgency img');
+        images.forEach(function(img) {
+            img.addEventListener('load', function() {
+                img.classList.add('loaded');
+            });
+        });
+    });
+
+</script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script type="text/javascript" src="/__/firebase/7.24.0/firebase-app.js"></script>
 
