@@ -1,0 +1,700 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="4SH - Website">
+    <meta name="application-name" content="4SH - Website">
+    <meta name="description" content="Apprendre les bases de Kotlin en 3 jours.">
+    <title>4SH - Kotlin - Expert</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../..//assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../..//assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../..//assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../..//assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../..//assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../..//assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../..//assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../..//assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../..//assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../..//assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../..//assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../..//assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../..//assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../..//assets/favicon/manifest.json">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6e500c2f-45f5-48b6-a578-bbdd7c72447a"
+            type="text/javascript" async></script>
+
+    <!-- Google Tag Manager -->
+    <script type="text/plain" data-cookieconsent="statistics">(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PMCWCHW');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11435542132">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11435542132');
+    </script>
+
+</head>
+<body class="">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMCWCHW"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="siteWrapper ">
+    <!--- START - Header -->
+    <div class="headerContainer">
+        <header class="cell shrink grid-x align-middle cd-morph-dropdown" id="header">
+            <div class="cell auto headerSpacer hide-for-small-only"></div>
+
+            <div class="cell grid-x align-middle headerContent">
+                <!-- Header Logo --->
+                <div class="cell shrink">
+                    <a href="../..//#sectionIntro" class="menu-item smooth-link isLogo">
+                        <img class="logoBase" src="../..//assets/img/svg/4sh_logo.svg" alt="4SH">
+                        <img class="logoHover" src="../..//assets/img/gif/4sh_logo-hover.gif" alt="4SH">
+                    </a>
+                </div>
+
+                <!-- START - Nav Desktop --->
+                <nav class="cell auto grid-x align-right align-middle headerMenu main-nav">
+                    <a href="../../expertise.html" title="" class="headerMenu-item has-dropdown links"
+                       data-content="expertise">Nos expertises</a>
+                    <a href="../../prestations.html" title="" class="headerMenu-item has-dropdown links"
+                       data-content="prestations">Nos prestations</a>
+                    <a href="../../nous-connaitre.html" title="" class="headerMenu-item has-dropdown links"
+                       data-content="career">Nous connaître</a>
+                    <a href="../../references.html" title="" class="headerMenu-item">Nos réussites</a>
+                    <a href="../../carriere.html" title="" class="headerMenu-item has-dropdown links"
+                       data-content="job">Carrières</a>
+                    <a href="https://blog.4sh.fr" title="" class="headerMenu-item">Blog</a>
+                    <a href="../../contact.html" class="button primary hollow headerMenu-contact has-icon-right ">Contact<i
+                            class="fa fa-comment-dots"></i></a>
+                    <a href="https://drive.google.com/open?id=1d0G3N0ixgiXyW8Owwe9dRVnfn5_TlP5i" class="headerMenu-book"
+                       target="_blank">
+                        <span class="headerMenu-book-img"></span>
+                        Notre plaquette
+                    </a>
+                </nav>
+
+                <div class="morph-dropdown-wrapper">
+                    <div class="dropdown-list">
+                        <ul>
+                            <li id="expertise" class="dropdown">
+                                <div class="content">
+                                    <ul class="dropdownContent-list">
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../expertise.html#sectionGlobalSkills"
+                                               title="Nos savoir-faire">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-savoirfaire.svg"
+                                                        alt="Image Nos savoir-faire"></span>
+                                                Nos savoir-faire
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../expertise.html#section4D" title="Notre méthode">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-methode.svg"
+                                                        alt="Image Notre méthode"></span>
+                                                Notre méthode
+                                            </a>
+                                        </li>
+
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../expertise.html#sectionCommitments" title="Nos engagements">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-engage.svg"
+                                                        alt="Image Nos engagements"></span>
+                                                Nos engagements
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="prestations" class="dropdown">
+                                <div class="content">
+                                    <ul class="dropdownContent-list">
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../prestations.html" title="Prestations">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-4d.svg"
+                                                        alt="Image Prestations"></span>
+                                                4SH 4D
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item _digital">
+                                            <a href="../../strategy.html" title="Prestation 4SH Digital Strategy">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-digital.svg"
+                                                        alt="Image 4SH Digital Strategy"></span>
+                                                4SH Digital Strategy
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item _ux">
+                                            <a href="../../ux.html" title="Prestation 4SH UX">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-ux.svg"
+                                                        alt="Image 4SH Ux"></span>
+                                                4SH UX
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item _studio">
+                                            <a href="../../studio.html" title="Prestation 4SH Studio">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-studio.svg"
+                                                        alt="Image 4SH Studio"></span>
+                                                4SH Studio
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item _facility">
+                                            <a href="../../facility.html" title="Prestation 4SH Facility">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-facility.svg"
+                                                        alt="Image 4SH Facility"></span>
+                                                4SH Facility
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item _learning">
+                                            <a href="../../learning.html" title="Prestation 4SH Learning">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-learning.svg"
+                                                        alt="Image 4SH Learning"></span>
+                                                4SH Learning
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item _data">
+                                            <a href="../../data.html" title="Prestation 4SH Data">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-data.svg"
+                                                        alt="Image 4SH Data"></span>
+                                                4SH Data
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="career" class="dropdown">
+                                <div class="content">
+                                    <ul class="dropdownContent-list">
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../nous-connaitre.html#sectionInside4sh" title="Inside 4SH">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-inside.svg"></span>Inside
+                                                4SH
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../nous-connaitre.html#sectionAbout4sh" title="">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-info.svg"></span>
+                                                À propos
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../nous-connaitre.html#sectionJobInvite" href="#"
+                                               title="Les métiers">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-job.svg"></span>
+                                                Les métiers
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../nous-connaitre.html#sectionLocations" href="#"
+                                               title="Les métiers">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-france.svg"></span>
+                                                Nos locaux
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../nous-connaitre.html#sectionCollective" title="">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-collectif.svg"></span>
+                                                La passion du collectif
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="job" class="dropdown">
+                                <div class="content">
+                                    <ul class="dropdownContent-list">
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../carriere.html#sectionJobs" title="">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-job.svg"></span>
+                                                Nos métiers
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../carriere.html#sectionTeam" title="">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-team.svg"></span>Notre
+                                                équipe
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../carriere.html#sectionPitch" title="">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-pitch.svg"></span>Les
+                                                pitchs
+                                            </a>
+                                        </li>
+                                        <li class="dropdownContent-list-item">
+                                            <a href="../../offres.html" title="">
+                                                <span class="navDropdown-icon"><img
+                                                        src="../..//assets/img/svg/nav-icon-offers.svg"></span>
+                                                Offres
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- dropdown-list -->
+                </div>
+                <!-- END - Nav Desktop --->
+            </div>
+
+            <div class="cell auto headerSpacer hide-for-small-only"></div>
+
+            <!-- START - Nav Mobile --->
+            <div class="cell auto grid-x align-right headerMenuMobile">
+                <div class="headerMenuMobile-btn">
+                    <div class="hamburger hamburger--3dx" id="burger-menu">
+                        <div class="hamburger-box" id="burger-menu-open-button">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav id="burger-menu-content" class="headerMenuMobile-nav">
+                    <a href="../../expertise.html" class="headerMenuMobile-nav-item">Nos expertises</a>
+                    <a href="../../prestations.html" class="headerMenuMobile-nav-item">Nos prestations</a>
+                    <a href="../../nous-connaitre.html" class="headerMenuMobile-nav-item">Nous connaître</a>
+                    <a href="../../references.html" class="headerMenuMobile-nav-item">Nos réussites</a>
+                    <a href="../../carriere.html" class="headerMenuMobile-nav-item">Carrières</a>
+                    <a href="https://blog.4sh.fr" title="" class="headerMenuMobile-nav-item">Blog</a>
+                    <a href="https://drive.google.com/open?id=1d0G3N0ixgiXyW8Owwe9dRVnfn5_TlP5i" target="_blank"
+                       class="headerMenuMobile-nav-item">Notre plaquette</a>
+                    <a href="../../contact.html" class="headerMenuMobile-nav-contact">Contact</a>
+                </nav>
+            </div>
+            <!-- END - Nav Mobile --->
+        </header>
+    </div>
+    <!--- END - Header -->
+
+    <a href="../../carriere.html#sectionRecruitment" class="btnOffer">
+        <img src="../..//assets/img/png/illu-stages.png">
+        <span class="btnOffer-label">Nous recrutons<i class="fa fa-chevron-right"></i></span>
+    </a>
+
+    <main class="mainContainer">
+        <!-- START Nav Levels -->
+        <div class="navLevels">
+            <ul class="navLevels-list">
+                <li class="navLevels-list-item _back">
+                    <a href="../..//learning/formations.html" class="cell shrink training-level">
+                        <i class="fa fa-arrow-left"></i>
+                        <span class="training-level-label">Retour à la liste</span>
+                    </a>
+                </li>
+                
+                <li class="navLevels-list-item _learning ">
+                                <a href="/learning/formations/kotlin-fondamental.html" 
+                                    class="cell shrink training-level">
+                                    <img src="/assets/img/svg/chip-fondamental.svg" alt="Fondamental">
+                                    <span class="training-level-label">Fondamental</span>
+                                </a>
+                            </li><li class="navLevels-list-item _learning _is-active">
+                                <a href="/learning/formations/kotlin-expert.html" 
+                                    class="cell shrink training-level">
+                                    <img src="/assets/img/svg/chip-expert.svg" alt="Expert">
+                                    <span class="training-level-label">Expert</span>
+                                </a>
+                            </li>
+            
+            </ul>
+        </div>
+        <!-- END Nav Levels -->
+        
+        <div class="formation _develop">
+            <div class="section _first-section formationHeader">
+                <div class="section-container _spaced">
+                    <div class="grid-x align-middle grid-padding-x">
+                        <div class="cell small-24 medium-11 grid-y grid-padding-y">
+                            <span class="formationHeader-category txt-develop">Develop<br></span>
+                            <h1>Kotlin<br></h1>
+                            <h2><!--TODO--></h2>
+                            <hr>
+                            <div class="grid-x formationHeader-breadcrumb">
+                                <a class="cell small-12 medium-shrink" href="#description">
+                                    <i class="fa fa-chevron-right"></i>
+                                    <span>Description</span>
+                                </a>
+                                <a class="cell small-12 medium-shrink" href="#objectifs">
+                                    <i class="fa fa-chevron-right"></i>
+                                    <span>Objectifs</span>
+                                </a>
+                                <a class="cell small-12 medium-shrink" href="#programme">
+                                    <i class="fa fa-chevron-right"></i>
+                                    <span>Programme</span>
+                                </a>
+                                <a class="cell small-12 medium-shrink" href="#formations">
+                                    <i class="fa fa-chevron-right"></i>
+                                    <span>Formations liées</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cell small-24 medium-auto text-center">
+                            <img class="formationIllu" src="../..//assets/img/svg/trainings/kotlin-expert.svg"
+                                 alt="Kotlin - Expert">
+                        </div>
+                        <div class="cell small-24 medium-5"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section formationBody">
+                <div class="section-container">
+                    <div class="grid-x align-top grid-padding-x formationBody-core">
+                        <div class="cell small-shrink medium-auto">
+                            <h3 id="description" class="font-bold">Description</h3>
+        
+                            <div class="training-wip">
+                                <p>
+                                    <b>Cette formation est en cours d’actualisation par nos formateurs.</b>
+                                    <br>
+                                    Vous êtes intéressé·e ? N'hésitez pas
+                                    <a class="link _link-learning" href=""
+                                       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marie-laure-klein/30min'});return false;" style="margin-top: 24px;">
+                                        à nous contacter !
+                                    </a>
+                                </p>
+                                <img src="/assets/img/svg/trainings/work-in-progress.svg" alt="">
+                            </div>
+        
+        
+        
+                            <h3 class="font-bold">Notes</h3>
+                            <div class="grid-x align-middle">
+                                <div class="cell small-24 grid-x align-middle grid-margin-x">
+                                    <div class="cell small-24 medium-shrink noteBloc">
+                                        <div class="noteBloc-stars text-center">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="text-center">
+                                            <b>N/A</b>
+                                        </div>
+                                        <span>Note moyenne calculée sur les retours post-formation.</span>
+                                    </div>
+                                    <div class="cell small-24 medium-auto infoBloc">
+                                        <span class="infoBloc-number"><i class="fas fa-users"></i><b
+                                                class="txt-learning">N/A</b>Participant·e·s</span>
+                                        <a target="_blank" href="https://drive.google.com/file/d/1mkrzyEtiJvC9djN1fp9xZJvIZV8tIB6-/view">Voir nos Conditions Générales de Vente</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+        
+                            <h3 id="formations" class="font-bold">Formation(s) liée(s)</h3>
+                            <!-- Card list : Start -->
+                            <div class="grid-x small-up-1 medium-up-2 grid-margin-x">
+                                
+                <div class="cell">
+                    <div onclick="location.href='/learning/formations/java-fondamental.html'" 
+                    class="card trainingCard _hover _white _develop" 
+                    data-training='{
+          "id": "t00003",
+          "publish": true,
+          "technicalName": "java",
+          "title": "Java",
+          "type": "Develop",
+          "desc": "",
+          "levels": [
+            {
+              "level": "Fondamental",
+              "duration": "4 jours",
+              "price": 1800,
+              "pdfLink": "https://drive.google.com/file/d/1_3zmjV7z598U2GRRbgrDd7emCHG-qYSU/view"
+            },
+            {
+              "level": "Expert",
+              "duration": "3 jours",
+              "price": 2100
+            }
+          ]
+        }'>
+                        <div class="trainingCard-illu">
+                            <img src="/assets/img/svg/trainings/java-fondamental.svg" 
+                            alt="Java">
+                        </div>
+                        <div class="card-section">
+                            <div class="trainingCard-head">
+                                <span class="title-medium font-bold">Java</span>
+                                <span class="trainingCard-domain">Develop</span>
+                            </div>
+                            <p class="training-desc"></p>
+                            
+                            <div class="training-list">
+                            <a href="/learning/formations/java-fondamental.html" 
+                                            class="training-list-item">
+                                            <div class="itemLeft">
+                                                <div class="training-level _active">
+                                                    <img src="/assets/img/svg/chip-fondamental.svg"/>
+                                                    Fondamental
+                                                </div>
+                                            </div>
+                                            <div class="itemRight">
+                                                 <div class="training-time">
+                                                    <i class="fas fa-hourglass-half"></i>
+                                                    4 jours
+                                                </div>
+                                                <span class="training-access">
+                                                    voir
+                                                    <i class="fa fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </a><a href="/learning/formations/java-expert.html" 
+                                            class="training-list-item">
+                                            <div class="itemLeft">
+                                                <div class="training-level _active">
+                                                    <img src="/assets/img/svg/chip-expert.svg"/>
+                                                    Expert
+                                                </div>
+                                            </div>
+                                            <div class="itemRight">
+                                                 <div class="training-time">
+                                                    <i class="fas fa-hourglass-half"></i>
+                                                    3 jours
+                                                </div>
+                                                <span class="training-access">
+                                                    voir
+                                                    <i class="fa fa-chevron-right"></i>
+                                                </span>
+                                            </div>
+                                        </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                            </div>
+                        </div>
+                        <div class="cell small-1"></div>
+                        <div class="cell small-auto medium-shrink">
+                            <div class="card formationPriceCard _white">
+                                <div class="card-section">
+                                    <span class="formationPriceCard-title">Prix de la formation</span>
+        
+                                    
+                <span class="training-time"><i class="fas fa-hourglass-half"></i> 3 jours</span>
+                <span class="formationPriceCard-price">2100,00€ <small>HT</small></span>
+                <a class="button learning has-icon-right" href=""
+                       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marie-laure-klein/30min'});return false;" style="margin-top: 24px;">
+                        Contactez-nous<i class="fa fa-chevron-right"></i>
+                </a>
+                 
+            
+        
+                                    <!--<div class="grid-x grid-margin-x align-center align-middle formationPriceCard-share">
+                                        <label class="cell shrink">Partager :</label>
+                                        <button onclick="navigator.clipboard.writeText(window.location.href);" class="cell shrink"><i class="fa fa-share-alt"></i></button>
+                                        <a href="#" class="cell shrink"><i class="fab fa-linkedin"></i></a>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell small-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--- START - Footer -->
+        <div class="footerContainer grid-y">
+            <div class="cell shrink grid-x grid-padding-x grid-padding-y footerTop">
+                <!-- Footer Logo --->
+                <div class="cell small-24 medium-shrink footerTop-logo">
+                    <a href="./#intro">
+                        <img src="../..//assets/img/svg/4sh_logo.svg" alt="4SH">
+                    </a>
+                </div>
+                <div class="cell small-1 hide-for-small-only"></div>
+                <div class="cell small-24 medium-auto addressBloc">
+                    <span class="title addressBloc-title"><i class="fa fa-map-marker-alt"></i>Paris</span>
+                    <address class="addressBloc-text">
+                        <a href="https://goo.gl/maps/Fw7vuuGnaLpK7n9dA" alt="Adresse 4SH Paris">
+                            6 place de la madeleine<br>
+                            75008 Paris
+                        </a>
+                    </address>
+                </div>
+
+                <div class="cell auto medium-auto addressBloc">
+                    <span class="title addressBloc-title"><i class="fa fa-map-marker-alt"></i>Bordeaux</span>
+                    <address class="addressBloc-text">
+                        <a href="https://goo.gl/maps/Fw7vuuGnaLpK7n9dA" alt="Adresse 4SH Bordeaux">
+                            6-8 avenue des satellites <br>
+                            33185 Le Haillan
+                        </a>
+                        <br>
+                        <br>
+                        <a href="https://w3w.co/souder.tireuse.source" class="link"><b>///souder.tireuse.source</b></a>
+                        <br>
+                        <a href="tel:+330963286273" class="link">+33 (0)9 63 28 62 73</a>
+                    </address>
+                </div>
+                <div class="cell small-24 medium-auto addressBloc">
+                    <span class="title addressBloc-title"><i class="fa fa-map-marker-alt"></i>Capbreton</span>
+                    <address class="addressBloc-text">
+                        <a href="https://goo.gl/maps/CbqBVxdcTu1FmUAE7" alt="Adresse 4SH Capbreton">
+                            2 Rue du Barrasquit <br>
+                            40130 Capbreton
+                        </a>
+                        <br>
+                        <br>
+                        <a href="https://w3w.co/eclaireur.vibrer.trouvons" class="link"><b>///éclaireur.vibrer.trouvons</b></a>
+                    </address>
+                </div>
+                <div class="cell small-24 large-9">
+                    <div class="grid-x grid-padding-x siteMap">
+                        <div class="cell small-12 medium-auto">
+                            <ul class="siteMap-list">
+                                <li class="siteMap-list-item"><a class="link" href="../..//./">Home</a></li>
+                                <li class="siteMap-list-item"><a class="link" href="../..//./#sectionVideo">L'entreprise</a>
+                                </li>
+                                <li class="siteMap-list-item"><a class="link" href="../../contact.html">Nous
+                                    rejoindre</a>
+                                </li>
+                                <li class="siteMap-list-item"><a class="link" href="../../offres.html">Emploi</a></li>
+                                <li class="siteMap-list-item"><a class="link" href="../../stages.html">Stages</a></li>
+                            </ul>
+                        </div>
+                        <div class="cell small-12 medium-auto">
+                            <ul class="siteMap-list">
+                                <li class="siteMap-list-item"><a class="link" href="../../carriere.html#Inside4sh">Inside
+                                    4SH</a></li>
+                                <li class="siteMap-list-item"><a class="link"
+                                                                 href="../../expertise.html#sectionGlobalSkills">Savoir-faire</a>
+                                </li>
+                                <li class="siteMap-list-item"><a class="link"
+                                                                 href="../../expertise.html#section4D">Prestation</a>
+                                </li>
+                                <li class="siteMap-list-item"><a class="link"
+                                                                 href="../../expertise.html#sectionCommitments">Engagement</a>
+                                </li>
+                                <li class="siteMap-list-item"><a class="link" href="../../carriere.html#sectionPitch">Témoignages</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cell small-12 medium-shrink">
+                            <ul class="siteMap-list">
+                                <li class="siteMap-list-item"><a class="link" href="../../references.html">Nos
+                                    réussites</a></li>
+                                <li class="siteMap-list-item"><a class="link" href="../../carriere.html#sectionTeam">Équipe</a>
+                                </li>
+                                <li class="siteMap-list-item"><a class="link" href="../../contact.html">Contact</a>
+                                </li>
+                                <li class="siteMap-list-item"><a class="link" href="../../mentions-legales.html">Mentions
+                                    Légales</a></li>
+                                <li class="siteMap-list-item"><a class="link" href="../../rgpd.html">Notice
+                                    d’informations RGPD</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell shrink grid-x grid-padding-x grid-padding-y footerBottom">
+                <div class="cell small-24 medium-auto">
+                    <small><strong>© 2007 - 2023 4SH </strong></small>
+                </div>
+                <div class="cell small-24 medium-shrink footerNetworks">
+                    Suivez-nous :
+                    <ul class="footerNetworks-list">
+                        <li class="footerNetworks-list-item">
+                            <a href="https://twitter.com/4sh_france" title="4SH Twitter" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="footerNetworks-list-item">
+                            <a href="https://www.linkedin.com/company/4sh-france/" title="4SH Linkedin" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="footerNetworks-list-item">
+                            <a href="https://www.youtube.com/channel/UCVHyJe5yzBizDzxvaNDUAGQ" title="4SH YouTube"
+                               target="_blank"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--- END - Footer -->
+    </main>
+</div>
+
+<script type="text/javascript" src="../../assets/js/app.js"></script>
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async data-cookieconsent="statistics" src="https://www.googletagmanager.com/gtag/js?id=G-CGMNJWWVKB"></script>
+<script data-cookieconsent="statistics">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CGMNJWWVKB');
+</script>
+
+<!-- Début de widget de lien Calendly -->
+<link data-cookieconsent="necessary" href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script data-cookieconsent="necessary" src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<!-- Fin de widget de lien Calendly -->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script type="text/javascript" src="/__/firebase/7.24.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script type="text/plain" data-cookieconsent="statistics" src="/__/firebase/7.24.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script type="text/javascript" src="/__/firebase/init.js"></script>
+</body>
+</html>
