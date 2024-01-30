@@ -1,0 +1,6 @@
+User-agent: Googlebot
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.4sh.fr/sitemap.xml
