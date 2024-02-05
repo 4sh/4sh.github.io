@@ -9,6 +9,7 @@ Allow: /
 Disallow: /*?
 Disallow: /*.js$
 Disallow: /*#
+Disallow: /../
 
-#sitemap
+#Sitemap
 Sitemap: https://www.4sh.fr/sitemap.xml
