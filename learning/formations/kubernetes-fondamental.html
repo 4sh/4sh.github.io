@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-title" content="4SH - Website">
     <meta name="application-name" content="4SH - Website">
     <meta name="description" content="Kubernetes est la solution d&#x27;orchestration de conteneurs qui a réussi à s&#x27;imposer sur le marché, supportée par tous les acteurs cloud (Amazon, Google, Microsoft, OVH, ...).">
-    <title>4SH - Kubernetes - Les fondamentaux</title>
+    <title>4SH - Kubernetes Application Developer - Les fondamentaux</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="../..//assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../..//assets/favicon/apple-icon-60x60.png">
@@ -363,9 +363,9 @@
             <div class="section _first-section formationHeader">
                 <div class="section-container _spaced">
                     <div class="grid-x align-middle grid-padding-x">
-                        <div class="cell small-24 medium-11 grid-y grid-padding-y">
+                        <div class="cell small-24 medium-auto grid-y grid-padding-y">
                             <span class="formationHeader-category txt-deploy">DevOps<br></span>
-                            <h1>Kubernetes<br></h1>
+                            <h1>Kubernetes Application Developer</h1>
                             <h2><!--TODO--></h2>
                             <hr>
                             <div class="grid-x formationHeader-breadcrumb">
@@ -387,11 +387,11 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cell small-24 medium-auto text-center">
+                        <div class="cell small-24 medium-8 text-center">
                             <img class="formationIllu" src="../..//assets/img/svg/trainings/kubernetes-fondamental.svg"
-                                 alt="Kubernetes - Les fondamentaux">
+                                 alt="Kubernetes Application Developer - Les fondamentaux">
                         </div>
-                        <div class="cell small-24 medium-5"></div>
+                        <div class="cell small-24 medium-2"></div>
                     </div>
                 </div>
             </div>
@@ -432,7 +432,7 @@
                                     <div class="cell small-24 medium-auto">
                                         <span class="title font-bold">Prérequis</span>
                                         <ul>
-                                            <li>Aucun.</li>
+                                            <li>Savoir utiliser les commandes de bases d’un linux.</li>
                                         </ul>
                                     </div>
                                     <div class="small-24 medium-1"></div>
@@ -441,18 +441,14 @@
                             <br>
                             <h3 id="objectifs" class="font-bold">Objectifs pédagogiques</h3>
                             <ul>
-                                <li>Comprendre et répondre à la question "A quoi sert Kubernetes ?"</li>
-                                <li>Comprendre les concepts et l'architecture haut niveau de Kubernetes</li>
-                                <li>Savoir définir les descripteurs Kubernetes pour son application</li>
-                                <li>Savoir interagir avec une application déployée sur Kubernetes :
-                                    <ul>
-                                        <li>Analyse des logs</li>
-                                        <li>Gestion des arrêts / redémarrages</li>
-                                        <li>Changement de configuration</li>
-                                        <li>Déploiement de nouvelle version</li>
-                                        <li>Analyse des problèmes</li>
-                                    </ul>
-                                </li>
+                                <li>Comprendre les concepts fondamentaux des conteneurs</li>
+                                <li>Comprendre les concepts fondamentaux de l'architecture Kubernetes</li>
+                                <li>Savoir définir et appliquer les descripteurs Kubernetes pour son application</li>
+                                <li>Savoir consulter l’état d’une application déployée</li>
+                                <li>Savoir déployer une nouvelle version d’application</li>
+                                <li>Maîtriser la configuration d’une d’application</li>
+                                <li>Savoir manipuler des modèles de descripteurs pour gérer plusieurs environnements</li>
+                                <li>Maîtriser le déploiement d’un composant middleware</li>
                             </ul>
                             <br>
                             <h3 id="programme" class="font-bold">Programme</h3>
@@ -460,60 +456,58 @@
                                 <div class="cell">
                                     <ol>
                                         <li>
-                                            <b>Introduction</b>
-                                            <ul>
-                                                <li>Comprendre les enjeux</li>
-                                            </ul>
+                                           <b>Introduction</b>
                                         </li>
+        
                                         <li>
-                                            <b>Docker</b>
-                                            <ul>
-                                                <li>Qu'est-ce que Docker ?</li>
-                                                <li>Builds d'images docker avec docker build</li>
-                                                <li>Publier des images avec docker push</li>
-                                                <li>Travaux pratiques</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <b>Kubernetes - architecture et vue d'ensemble</b>
-                                            <ul>
-                                                <li>Principaux objets - vue d'ensemble
-                                                    <ul>
-                                                        <li>Pods</li>
-                                                        <li>ReplicaSet</li>
-                                                        <li>Deployment</li>
-                                                    </ul>
-                                                </li>
-                                                <li>StatefulSet
-                                                    <ul>
-                                                        <li>PersistentVolume et PVC</li>
-                                                        <li>ConfigMap / Secret</li>
-                                                        <li>Service</li>
-                                                        <li>Ingress</li>
-                                                        <li>Jobs / CronJobs</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Travaux pratiques - ma première application dans le cloud avec Kubernetes</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <b>Comprendre les principes descripteurs</b>
-                                            <ul>
-                                                <li>Deployment</li>
-                                                <li>Service</li>
-                                                <li>Ingress</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <b>Consulter l'état d'une application Kubernetes</b>
+                                            <b>Fondamentaux sur les conteneurs</b>
         
                                             <ul>
-                                                <li>Lister les pods</li>
-                                                <li>Obtenir le détail d'un pod</li>
-                                                <li>Accès aux logs</li>
-                                                <li>S'attacher à un pod</li>
-                                                <li>Lancer une commande dans le cluster</li>
-                                                <li>Travaux pratiques</li>
+                                                <li>Présentation des conteneurs</li>
+                                                <li>Construire des images avec dockerfile</li>
+                                                <li>Publier des images sur un dépôt</li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <b>Fondamentaux sur Kubernetes</b>
+        
+                                            <ul>
+                                                <li>Principes de Kubernetes</li>
+                                                <li>Contextes et namespaces</li>
+                                                <li>
+                                                    Les ressources essentielles
+                                                    <ul>
+                                                        <li>pod</li>
+                                                        <li>replicaset</li>
+                                                        <li>deployment</li>
+                                                        <li>service</li>
+                                                        <li>ingress</li>
+                                                        <li>job / cronjob</li>
+                                                        <li>cofigmap / secret</li>
+                                                        <li>persistent volume et pvc</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Ecrire et appliquer des descritpeurs YAML</li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <b>Consulter l'état d’une application Kubernetes</b>
+        
+                                            <ul>
+                                                <li>Lister des ressources</li>
+                                                <li>Consulter l’état d’un pod</li>
+                                                <li>Manipuler un pod</li>
+                                            </ul>
+                                        </li>
+        
+                                        <li>
+                                            <b>Configuration d’une application</b>
+        
+                                            <ul>
+                                                <li>Générer des variables d’environnement avec une configMap ou un secret</li>
+                                                <li>Générer des fichiers de configuration</li>
                                             </ul>
                                         </li>
                                     </ol>
@@ -522,55 +516,37 @@
                                 <div class="cell">
                                     <ol start="6">
                                         <li>
-                                            <b>Configuration</b>
+                                            <b>Mettre à jour une application</b>
         
                                             <ul>
-                                                <li>Paramétrer une application avec :
-                                                    <ul>
-                                                        <li>Command</li>
-                                                        <li>Env</li>
-                                                        <li>ConfigMap</li>
-                                                    </ul>
-                                                </li>
-                                                <li>Travaux pratiques</li>
+                                                <li>Redémarrer une application sans coupure</li>
+                                                <li>Mise à l’échelle</li>
+                                                <li>Montée de version</li>
+                                                <li>Sondes</li>
                                             </ul>
                                         </li>
+        
                                         <li>
-                                            <b>Arrêter / redémarrer et mettre à jour une application</b>
+                                            <b>Utiliser plusieurs environnements</b>
         
                                             <ul>
-                                                <li>Différentes façons de redémarrer une application</li>
-                                                <li>Gestion des mises à jour</li>
-                                                <li>Notion de rollout</li>
-                                                <li>Travaux pratiques</li>
+                                                <li>Utiliser des templates avec Kustomize</li>
+                                                <li>Appliquer des patches</li>
                                             </ul>
                                         </li>
+        
                                         <li>
-                                            <b>Mieux définir ses descripteurs avec kustomize</b>
-                                            <ul>
-                                                <li>Présentation de kustomize</li>
-                                                <li>Usage</li>
-                                                <li>Travaux pratiques</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <b>Installer une base de données avec helm</b>
+                                            <b>Installer un middleware</b>
         
                                             <ul>
-                                                <li>Présentation de helm</li>
-                                                <li>Quelle différence avec kustomize ?</li>
-                                                <li>Comment rechercher et installer un composant avec helm ?</li>
-                                                <li>Exemple avec une base de données PostgreSQL</li>
-                                                <li>Travaux pratiques</li>
+                                                <li>Utiliser Helm</li>
+                                                <li>Rechercher des charts</li>
+                                                <li>Déployer un chart</li>
                                             </ul>
                                         </li>
+        
                                         <li>
                                             <b>Conclusion</b>
-        
-                                            <ul>
-                                                <li>Synthèse sur les cas d'usage Kubernetes</li>
-                                                <li>Ressources pour aller plus loin</li>
-                                            </ul>
                                         </li>
                                     </ol>
                                 </div>
