@@ -1,0 +1,42 @@
+RedirectPermanent /learning.html /learning/formations/
+
+RedirectPermanent /learning/formations.html /learning/formations/
+
+RedirectPermanent /learning/formations/angular-expert.html /learning/formations/develop/angular-expert.html
+RedirectPermanent /learning/formations/angular-fondamental.html /learning/formations/develop/angular-fondamental.html
+RedirectPermanent /learning/formations/kafka-fondamental.html /learning/formations/develop/kafka-fondamental.html
+RedirectPermanent /learning/formations/grpc-fondamental.html /learning/formations/develop/grpc-fondamental.html
+RedirectPermanent /learning/formations/kotlin-expert.html /learning/formations/develop/kotlin-expert.html
+RedirectPermanent /learning/formations/java-fondamental.html /learning/formations/develop/java-fondamental.html
+RedirectPermanent /learning/formations/mongodb-fondamental.html /learning/formations/develop/mongodb-fondamental.html
+RedirectPermanent /learning/formations/ionic-fondamental.html /learning/formations/develop/ionic-fondamental.html
+RedirectPermanent /learning/formations/js-ts-fondamental.html /learning/formations/develop/js-ts-fondamental.html
+RedirectPermanent /learning/formations/architecture-fondamental.html /learning/formations/develop/architecture-fondamental.html
+RedirectPermanent /learning/formations/kotlin-fondamental.html /learning/formations/develop/kotlin-fondamental.html
+RedirectPermanent /learning/formations/spring-fondamental.html /learning/formations/develop/spring-fondamental.html
+RedirectPermanent /learning/formations/js-ts-expert.html /learning/formations/develop/js-ts-expert.html
+RedirectPermanent /learning/formations/mongodb-expert.html /learning/formations/develop/mongodb-expert.html
+RedirectPermanent /learning/formations/css-fondamental.html /learning/formations/develop/css-fondamental.html
+RedirectPermanent /learning/formations/html-essentiel.html /learning/formations/develop/html-essentiel.html
+RedirectPermanent /learning/formations/java-expert.html /learning/formations/develop/java-expert.html
+
+RedirectPermanent /learning/formations/figma-fondamental.html /learning/formations/design/figma-fondamental.html
+RedirectPermanent /learning/formations/figma-essentiel.html /learning/formations/design/figma-essentiel.html
+
+RedirectPermanent /learning/formations/docker-essentiel.html /learning/formations/devops/docker-essentiel.html
+RedirectPermanent /learning/formations/docker-fondamental.html /learning/formations/devops/docker-fondamental.html
+RedirectPermanent /learning/formations/kubernetes-fondamental.html /learning/formations/devops/kubernetes-fondamental.html
+RedirectPermanent /learning/formations/monitoring-fondamental.html /learning/formations/devops/monitoring-fondamental.html
+RedirectPermanent /learning/formations/kubernetes-expert.html /learning/formations/devops/kubernetes-expert.html
+RedirectPermanent /learning/formations/terraform-fondamental.html /learning/formations/devops/terraform-fondamental.html
+
+RedirectPermanent /learning/formations/git-fondamental.html /learning/formations/outils/git-fondamental.html
+RedirectPermanent /learning/formations/gradle-essentiel.html /learning/formations/outils/gradle-essentiel.html
+RedirectPermanent /learning/formations/maven-essentiel.html /learning/formations/outils/maven-essentiel.html
+RedirectPermanent /learning/formations/gradle-expert.html /learning/formations/outils/gradle-expert.html
+RedirectPermanent /learning/formations/git-essentiel.html /learning/formations/outils/git-essentiel.html
+RedirectPermanent /learning/formations/gradle-fondamental.html /learning/formations/outils/gradle-fondamental.html
+RedirectPermanent /learning/formations/intellij-essentiel.html /learning/formations/outils/intellij-essentiel.html
+RedirectPermanent /learning/formations/confluence-fondamental.html /learning/formations/outils/confluence-fondamental.html
+RedirectPermanent /learning/formations/git-expert.html /learning/formations/outils/git-expert.html
+RedirectPermanent /learning/formations/hubit-fondamental.html /learning/formations/outils/hubit-fondamental.html
