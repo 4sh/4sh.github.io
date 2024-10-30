@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4SH Exploitation - Site en maintenance</title>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary : #0097A7;
+            --primary_dark : #0E2A4B;
+        }
+
+        * {
+            font-family: "Asap", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            font-variation-settings:
+                    "wdth" 100;
+        }
+
+        ::selection {
+            color: white;
+            background-color: var(--primary);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("https://storage.googleapis.com/4sh-studio/4SH/DSI/maintenance-bg.png");
+            background-color: var(--primary_dark);
+        }
+
+        h1 {
+            color: var(--primary);
+        }
+
+        main {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            max-width: 90vw;
+            box-shadow: 0 0 8px 1px black;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <h1>Votre site est en cours de maintenance.</h1>
+    <p>
+        Il sera disponible très prochainement.
+    </p>
+
+    <dotlottie-player src="https://lottie.host/c2ede322-33f4-4d94-9d60-25562ad54953/yWEBS6XXK2.json" background="transparent" speed="1" style="width: 20vw; height: 20vw" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+
+    <p>
+        Solution hébergée par :
+    </p>
+    <a href="https://www.4sh.fr/facility.html">
+        <img src="https://storage.googleapis.com/4sh-studio/4SH/DSI/logo_exploitation.svg" width="260px" alt="4SH Exploitation">
+    </a>
+</main>
+
+</body>
+</html>
