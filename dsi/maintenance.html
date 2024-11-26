@@ -9,6 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <script>
+        window.addEventListener('load', (event) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            let newUrl = decodeURIComponent(urlParams.toString().slice(0, -1));
+            setTimeout(()=>{
+                    window.location.replace(newUrl);
+                },
+                30000)
+        })
+    </script>
+
     <style>
         :root {
             --primary : #0097A7;
